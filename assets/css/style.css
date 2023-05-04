@@ -7,11 +7,20 @@
     border: none;
 }
 
+/* */
+body {
+    background-image: url(../images/cutting-board-salad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* Header, logo and navigation bar */
 
-#nav-tab {
+#header {
     background-color: grey;
-    height: 100px;
+    overflow: hidden;
+    white-space: no-wrap;
+    width: 100%;
 }
 
 #logo {
@@ -34,4 +43,18 @@
 #list-menu li {
     float: left;
     padding: 14px 40px;
+    text-transform: uppercase;
+    display: inline;
+}
+
+#list-menu a {
+    text-decoration: none;
+}
+
+#list-menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+.active-page {
+    border-bottom: 1px solid black;
 }
