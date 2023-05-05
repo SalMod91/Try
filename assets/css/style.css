@@ -17,11 +17,14 @@
 #header {
     background-color: rgb(33, 33, 35);
     overflow: hidden;
-    white-space: no-wrap;
+    /* white-space: no-wrap; */
     width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 3;
 }
 
-#logo {
+.logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -42,7 +45,7 @@
     float: left;
     padding: 14px 40px;
     text-transform: uppercase;
-    display: inline;
+    display: inline-block;
 }
 
 #list-menu a {
@@ -91,4 +94,13 @@
     margin: 40px;
     height: 440px;
     background: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(33, 33, 35);
+    overflow: hidden;
+    white-space: no-wrap;
+    width: 100%;
 }
