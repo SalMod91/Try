@@ -60,9 +60,10 @@
 /* Hero image and welcome section */
 
 #hero-image {
+    position: relative;
     height: 600px;
-    width: 80%;
-    background: url(../images/construction.jpg) no-repeat center center;
+    width: 1440px;
+    background: url(../images/construction.jpg) no-repeat center center / 100%;
     margin: 0 auto;
 }
 
@@ -74,8 +75,20 @@
     font-size: 130%;
 }
 
-/* Preview box */
+/* Preview boxes */
 
 .container {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+.container-item {
+    width: 640px;
+    margin: 40px;
+    height: 440px;
+    background: rgba(255, 255, 255, 0.6);
 }
