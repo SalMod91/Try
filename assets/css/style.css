@@ -9,9 +9,7 @@
 
 /* */
 body {
-    background-image: url(../images/cutting-board-salad.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #966F33 url(../images/cutting-board-salad.jpg) no-repeat center center fixed;
 }
 
 /* Header, logo and navigation bar */
