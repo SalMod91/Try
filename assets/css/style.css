@@ -15,7 +15,7 @@
 /* Header, logo and navigation bar */
 
 #header {
-    background-color: grey;
+    background-color: rgb(33, 33, 35);
     overflow: hidden;
     white-space: no-wrap;
     width: 100%;
@@ -50,11 +50,32 @@
 }
 
 #list-menu a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .active-page {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
-/* Main section */
+/* Hero image and welcome section */
+
+#hero-image {
+    height: 600px;
+    width: 80%;
+    background: url(../images/construction.jpg) no-repeat center center;
+    margin: 0 auto;
+}
+
+#welcome-message {
+    position:relative;
+    top: 25%;
+    text-align: center;
+    color: yellow;
+    font-size: 130%;
+}
+
+/* Preview box */
+
+.container {
+    
+}
