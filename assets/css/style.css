@@ -7,9 +7,9 @@
     border: none;
 }
 
-/* */
-body {
-    background: #966F33 url(../images/cutting-board-salad.jpg) no-repeat center center fixed;
+/* Backgrounds */
+#home-background {
+    background: #966F33 url(../images/cutting-board-salad.jpg) no-repeat center center / cover fixed;
 }
 
 /* Header, logo and navigation bar */
@@ -56,3 +56,5 @@ body {
 .active-page {
     border-bottom: 1px solid black;
 }
+
+/* Main section */
