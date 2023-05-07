@@ -45,11 +45,12 @@
     float: left;
     padding: 14px 40px;
     text-transform: uppercase;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 #list-menu a {
     text-decoration: none;
+    color:white;
 }
 
 #list-menu a:hover {
@@ -90,10 +91,34 @@
 
 
 .container-item {
+    position: relative;
     width: 640px;
     margin: 40px;
     height: 440px;
     background: rgba(255, 255, 255, 0.6);
+}
+
+.container-item-img-left {
+    float: left;
+    width: 70%;
+    height: 87%;
+    margin-top: 4%;
+}
+
+.container-item-text-left {
+    display: inline;
+    text-align: center;
+    font-family: "East Sea Dokdo";
+    font-size: 200%;
+}
+
+.container-item-button-left {
+    position: absolute;
+    bottom: 3px;
+    left: 74%;
+    font-size: 93px;
+    font-family: "East Sea Dokdo";
+    background-color: yellow;
 }
 
 /* Footer */
