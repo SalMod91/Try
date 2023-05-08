@@ -17,7 +17,6 @@
 #header {
     background-color: rgb(33, 33, 35);
     overflow: hidden;
-    /* white-space: no-wrap; */
     width: 100%;
     position: fixed; 
     top: 0;
@@ -68,7 +67,7 @@
     height: 600px;
     width: 1440px;
     background: url(../images/construction.jpg) no-repeat center center / 100%;
-    margin: 0 auto;
+    margin: 140px auto 0;
 }
 
 #welcome-message {
@@ -165,6 +164,24 @@
     background-color: #000000;
     color: #FFB018;
     transition: all 0.5s;
+}
+
+/* Menu Page */
+
+#menu-container {
+    position: relative;
+    height: 200px;
+    width: 1440px;
+    background: black;
+    margin: 140px auto 0;
+}
+
+#menu-message {
+    position:relative;
+    top: 25%;
+    text-align: center;
+    color: yellow;
+    font-size: 130%;
 }
 
 /* Footer */
