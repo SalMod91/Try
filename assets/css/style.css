@@ -1,5 +1,5 @@
 /* Imported Fonts */
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=Merriweather:ital,wght@1,300&display=swap');
 
 * {
     margin: 0;
@@ -33,7 +33,7 @@
 }
 
 #list-menu {
-    font-family: "East Sea Dokdo";
+    font-family: Merriweather;
     list-style-type: none;
     float: right;
     padding-top: 12px;
@@ -66,7 +66,7 @@
     position: relative;
     height: 600px;
     width: 1440px;
-    background: url(../images/construction.jpg) no-repeat center center / 100%;
+    background: url(../images/foodtruck.jpg) no-repeat center center / 100%;
     margin: 140px auto 0;
 }
 
@@ -138,20 +138,22 @@
     position: absolute;
     bottom: 3px;
     left: 74%;
-    font-size: 93px;
-    font-family: "East Sea Dokdo";
+    font-size: 250%;
+    font-family: "Fredericka the great";
     background-color: #FFB018;
-    color:#000000;
+    color: #000000;
+    width: 25%;
 }
 
 .container-item-button-right {
     position: absolute;
     bottom: 3px;
     right: 74%;
-    font-size: 93px;
-    font-family: "East Sea Dokdo";
+    font-size: 250%;
+    font-family: "Fredericka the great";
     background-color: #FFB018;
-    color:#000000;
+    color: #000000;
+    width: 25%;
 }
 
 .container-item-button-left:hover {
@@ -168,20 +170,33 @@
 
 /* Menu Page */
 
-#menu-container {
+#board-container {
     position: relative;
-    height: 200px;
-    width: 1440px;
-    background: black;
+    height: 360px;
+    width: 33%;
+    background: url(../images/chalkboard.jpg) no-repeat center center / 100% 100%;
     margin: 140px auto 0;
+
 }
 
-#menu-message {
+#menu-board-message {
     position:relative;
-    top: 25%;
+    top: 32%;
     text-align: center;
-    color: yellow;
-    font-size: 130%;
+    font-size: 400%;
+    font-family: "fredericka the great";
+    color: whitesmoke;
+}
+
+/* Location Page */
+
+#location-board-message {
+    position:relative;
+    top: 16%;
+    text-align: center;
+    font-size: 400%;
+    font-family: "fredericka the great";
+    color: whitesmoke;
 }
 
 /* Footer */
