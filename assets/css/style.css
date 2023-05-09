@@ -18,26 +18,29 @@
     background-color: rgb(33, 33, 35);
     overflow: hidden;
     width: 100%;
+    height: 80px;
     position: fixed; 
     top: 0;
     z-index: 3;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top: 10px;
     margin-bottom: 10px;
+    position: absolute;
+    left: 5%;
 }
 
 #list-menu {
     font-family: Merriweather;
     list-style-type: none;
     float: right;
-    padding-top: 12px;
-    font-size: 250%;
+    line-height: 50px;
+    font-size: 160%;
 }
 
 #list-menu li {
@@ -60,14 +63,25 @@
     border-bottom: 1px solid white;
 }
 
-/* Hero image and welcome section */
+/* Hero image, frame and welcome section */
 
 #hero-image {
     position: relative;
     height: 600px;
-    width: 1440px;
-    background: url(../images/foodtruck.jpg) no-repeat center center / 100%;
+    width: 1080px;
+    background: url(../images/food-truck-3.jpeg) no-repeat center center / 100% 100%;
     margin: 140px auto 0;
+    z-index: 1;
+}
+
+#frame-home {
+    background: url(../images/FrameWork.png) no-repeat center center / 100% 100%;
+    height: 600px;
+    width: 100%;
+    margin: 140px auto 0;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
 }
 
 #welcome-message {
@@ -89,7 +103,8 @@
     margin: 0 auto;
 }
 
-/* Boxes cotaining */
+/* Boxes */
+
 .container-item-left {
     position: relative;
     width: 700px;
@@ -168,7 +183,7 @@
     transition: all 0.5s;
 }
 
-/* Menu Page */
+/* Chalkboard for all pages */
 
 #board-container {
     position: relative;
@@ -178,6 +193,18 @@
     margin: 140px auto 0;
 
 }
+
+.frame-board {
+    background: url(../images/FrameWork.png) no-repeat center center / 100% 100%;
+    height: 360px;
+    width: 100%;
+    margin: 140px auto 0;
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Menu Page */
 
 #menu-board-message {
     position:relative;
@@ -199,6 +226,28 @@
     color: whitesmoke;
 }
 
+/* Concept & Story Page */
+
+#aboutus-board-message {
+    position:relative;
+    top: 16%;
+    text-align: center;
+    font-size: 400%;
+    font-family: "fredericka the great";
+    color: whitesmoke;
+}
+
+/* Contact Page */
+
+#contact-board-message {
+    position:relative;
+    top: 32%;
+    text-align: center;
+    font-size: 400%;
+    font-family: "fredericka the great";
+    color: whitesmoke;
+}
+
 /* Footer */
 
 footer {
@@ -206,5 +255,6 @@ footer {
     overflow: hidden;
     white-space: no-wrap;
     width: 100%;
+    height: 80px;
     margin-top: 40px;
 }
