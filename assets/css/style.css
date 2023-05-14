@@ -27,11 +27,9 @@
 .logo {
     width: 60px;
     height: 60px;
-    /* border-radius: 50%; */
-    /* margin-left: 5%; */
     margin-top: 10px;
     margin-bottom: 10px;
-    position: relative;
+    position: absolute;
     left: 5%;
     z-index: 3;
 }
@@ -39,8 +37,6 @@
 .logo-2 {
     width: 60px;
     height: 60px;
-    /* border-radius: 50%; */
-    /* margin-left: 5%; */
     margin-top: 10px;
     margin-bottom: 10px;
     position: absolute;
@@ -49,9 +45,45 @@
     opacity: 0%;
 }
 
+.logo-name {
+    width: 192px;
+    height: 77px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 240px;
+    z-index: 3;
+}
+
+.logo-name-2 {
+    width: 192px;
+    height: 77px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 240px;
+    z-index: 4;
+    opacity: 0%;
+}
+
 .logo-2:hover {
     opacity: 1.0;
     transition: all 0.3s;
+}
+
+.logo-name-2:hover {
+    opacity: 1.0;
+    transition: all 0.5s;
+}
+
+#header-name {
+    font-family: "Merriweather";
+    font-size: 200%;
+    position: relative;
+    left: 5%;
+    line-height: 75px;
+    /* text-transform: uppercase; */
+    color: white;
 }
 
 #list-menu {
@@ -64,9 +96,9 @@
 
 #list-menu li {
     float: left;
-    padding: 14px 40px;
+    padding: 14px 25px;
     text-transform: uppercase;
-    /* display: inline-block; */
+    letter-spacing: 1px;
 }
 
 #list-menu a {
@@ -87,7 +119,7 @@
 #hero-image {
     position: relative;
     height: 600px;
-    width: 1080px;
+    width: 1440px;
     background: url(../images/) no-repeat center center / 100% 100%;
     margin: 140px auto 0;
     z-index: 1;
