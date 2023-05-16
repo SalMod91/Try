@@ -144,7 +144,7 @@
         color: #ffb018;
 }
 
-/* Summary boxes */
+/* Home Page Summary boxes */
 
 /* Div containing the boxes */
 
@@ -192,14 +192,7 @@
     border: 10px solid black;
 }
 
-.container-item-text-left {
-    display: inline;
-    text-align: center;
-    font-family: "East Sea Dokdo";
-    font-size: 200%;
-}
-
-.container-item-text-left {
+.container-item-text {
     display: inline;
     text-align: center;
     font-family: "Amatic SC";
@@ -207,7 +200,7 @@
     margin-left:20px;
 }
 
-.container-item-text-left h3 {
+.container-item-text h3 {
     font-family: "Fredericka the great";
     text-decoration: underline;
     margin-bottom: 30px;
@@ -282,6 +275,23 @@
     font-family: "fredericka the great";
     color: whitesmoke;
 }
+
+.menu-container-item-text {
+    display: inline;
+    text-align: center;
+    font-family: "Amatic SC";
+    font-size: 200%;
+    margin-left: 20px;
+    line-height: 1;
+}
+
+.menu-container-item-text h3 {
+    font-family: "Fredericka the great";
+    text-decoration: underline;
+    margin-bottom: 30px;
+    line-height: 0;
+}
+ 
 
 /* Location Page */
 
