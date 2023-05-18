@@ -45,7 +45,7 @@
     opacity: 0%;
 }
 
-.logo-name {
+.logo-with-name {
     width: 250px;
     height: 88px;
     margin-top: -5px;
@@ -55,7 +55,7 @@
     z-index: 3;
 }
 
-.logo-name-2 {
+.logo-with-name-2 {
     width: 250px;
     height: 88px;
     margin-top: -5px;
@@ -71,19 +71,9 @@
     transition: all 0.3s;
 }
 
-.logo-name-2:hover {
+.logo-with-name-2:hover {
     opacity: 1.0;
     transition: all 0.5s;
-}
-
-#header-name {
-    font-family: "Merriweather";
-    font-size: 200%;
-    position: relative;
-    left: 5%;
-    line-height: 75px;
-    /* text-transform: uppercase; */
-    color: white;
 }
 
 #list-menu {
@@ -272,7 +262,7 @@
     top: 32%;
     text-align: center;
     font-size: 400%;
-    font-family: "fredericka the great";
+    font-family: "Fredericka the great";
     color: whitesmoke;
 }
 
@@ -300,7 +290,7 @@
     top: 16%;
     text-align: center;
     font-size: 400%;
-    font-family: "fredericka the great";
+    font-family: "Fredericka the great";
     color: whitesmoke;
 }
 
@@ -311,7 +301,7 @@
     top: 16%;
     text-align: center;
     font-size: 400%;
-    font-family: "fredericka the great";
+    font-family: "Fredericka the great";
     color: whitesmoke;
 }
 
@@ -322,7 +312,7 @@
     top: 32%;
     text-align: center;
     font-size: 400%;
-    font-family: "fredericka the great";
+    font-family: "Fredericka the great";
     color: whitesmoke;
 }
 
