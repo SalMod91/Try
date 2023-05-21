@@ -13,7 +13,6 @@
 }
 
 /* Header, logo and navigation bar */
-
 #header {
     background-color: rgb(33, 33, 35);
     overflow: hidden;
@@ -104,8 +103,9 @@
     border-bottom: 1px solid white;
 }
 
-/* Home page hero image, background and welcome section */
+/*Home Page*/
 
+/* Home page hero image, background and welcome section */
 #background-hero-image {
     position: relative;
     height: 600px;
@@ -134,10 +134,7 @@
         color: #ffb018;
 }
 
-/* Home Page Summary boxes */
-
-/* Div containing the boxes */
-
+/* Div containing the summary boxes */
 .container {
     display: flex;
     flex-direction: row;
@@ -146,8 +143,7 @@
     margin: 0 auto;
 }
 
-/* Boxes */
-
+/* Boxes and content*/
 .container-item-left {
     position: relative;
     width: 700px;
@@ -235,7 +231,6 @@
 }
 
 /* Chalkboard for all pages */
-
 #board-container {
     position: relative;
     height: 360px;
@@ -256,7 +251,6 @@
 }
 
 /* Menu Page */
-
 #menu-board-message {
     position:relative;
     top: 32%;
@@ -283,8 +277,9 @@
 }
  
 
-/* Location Page */
+/* Location & Events Page */
 
+/* Location */
 #location-board-message {
     position:relative;
     top: 16%;
@@ -303,13 +298,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#location-banner h2 {
     font-family: "Fredericka the great";
     font-size: 400%;
     text-align: center;    
 }
+
+/* #location-banner h2 {
+    font-family: "Fredericka the great";
+    font-size: 400%;
+    text-align: center;    
+} */
 
 #location-container {
     background: rgba(255, 255, 255, 0.6);
@@ -336,6 +334,7 @@
     right: 30px;
 }
 
+/* Events */
 #events-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 80%;
@@ -345,30 +344,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Fredericka the great";
+    font-size: 400%;
+    text-align: center; 
 }
 
-#events-banner h2 {
+/* #events-banner h2 {
     font-family: "Fredericka the great";
     font-size: 400%;
     text-align: center;    
-}
+} */
 
 #events-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 77%;
+    width: 80%;
     height: 600px;
     position: relative;
     margin: 0 auto 40px;
-    padding: 0 30px;
 }
 
 #events-container span {
-    width:25%;
+    width:24%;
     float: left;
     text-align: center;
     border: 5px black solid;
     box-sizing: border-box;
     font-family: merriweather;
+    padding: 10px;
+}
+
+#events-left-margin {
+    margin-left: 30px;
+}
+
+#events-right-margin {
+    margin-right: 30px;
 }
 
 #events-container h3 {
@@ -389,8 +399,8 @@
 #events-container p {
     line-height: 1.5;
 }
-/* Concept & Story Page */
 
+/* Concept & Story Page */
 #aboutus-board-message {
     position:relative;
     top: 16%;
@@ -400,8 +410,87 @@
     color: whitesmoke;
 }
 
-/* Contact Page */
+/* Concept */
+#concept-banner {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    position: relative;
+    height: 120px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredericka the great";
+    font-size: 400%;
+    text-align: center; 
+}
 
+#concept-container {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    /* height: 600px; */
+    position: relative;
+    margin: 0 auto 40px;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+/* .concept-content-left {
+    width: 45.06%;
+    margin: 1.97% 1.97% 0 0;
+    text-align: center;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.concept-content-right {
+    width: 45.06%;
+    margin: 1.97% 1.97% 0 0;
+    text-align: center;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.concept-image-right {
+    width: 45.06%;
+    float: right;
+    margin: 1.97% 1.97% 0 0;
+}
+
+.concept-image-left {
+    width: 45.06%;
+    float: left;
+    margin: 1.97% 1.97% 0 0;
+} */
+
+.concept-flex {
+    display:flex;
+}
+
+.concept-text {
+    width: 50%;
+    text-align: center;
+}
+
+.concept-image {
+    width: 50%
+}
+
+.concept-flex>div {
+    padding: 30px;
+}
+
+.image-test {
+    width: 96%;
+    border: 10px black solid;
+}
+
+#concept-container .concept-flex:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+/* Contact Page */
 #contact-board-message {
     position:relative;
     top: 32%;
