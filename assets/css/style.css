@@ -203,6 +203,7 @@
     width: 26%;
     margin-bottom: 25px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .container-item-button-right {
@@ -216,6 +217,7 @@
     width: 25%;
     margin-bottom: 25px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .container-item-button-left:hover {
@@ -421,8 +423,9 @@
     align-items: center;
     justify-content: center;
     font-family: "Fredericka the great";
-    font-size: 400%;
+    font-size: 300%;
     text-align: center; 
+    text-transform: uppercase;
 }
 
 #concept-container {
@@ -501,14 +504,14 @@
     align-items: center;
     justify-content: center;
     font-family: "Fredericka the great";
-    font-size: 400%;
+    font-size: 300%;
     text-align: center; 
+    text-transform: uppercase;
 }
 
 #story-container {
     background: rgba(255, 255, 255, 0.6);
     width: 60%;
-    /* height: 600px; */
     position: relative;
     margin: 0 auto 40px;
     overflow: auto;
@@ -526,6 +529,67 @@
     color: whitesmoke;
 }
 
+#contact-banner {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    position: relative;
+    height: 120px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredericka the great";
+    font-size: 300%;
+    text-align: center; 
+    text-transform: uppercase;
+}
+
+#contact-container {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    position: relative;
+    margin: 0 auto 40px;
+    overflow: auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact Form */
+#contact-form {
+    width: 50%;
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#contact-form>input[type=text], #contact-form>input[type=email], #contact-form>textarea {
+    width: 96%;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#contact-form>input[type=submit] {
+    font-size: 250%;
+    font-family: "Fredericka the great";
+    background-color: #FFB018;
+    color: #000000;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+
+#contact-form>input[type=submit]:hover {
+    background-color: #000000;
+    color: #FFB018;
+    transition: all 0.5s;
+}
+
+#required {
+    text-align: left;
+    padding-left: 25%;
+}
 /* Footer */
 
 footer {
