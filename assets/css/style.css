@@ -479,7 +479,7 @@
 }
 
 .concept-flex>div {
-    padding: 30px;
+    padding: 2.5%;
 }
 
 .image-about-me {
@@ -528,6 +528,7 @@
     font-size: 145%;
     padding-top: 6.5%;
     text-align: left;
+    white-space: nowrap;
 }
 
 #eco-image {
@@ -535,7 +536,7 @@
 }
 
 #eco-flex>div {
-    padding: 30px;
+    padding: 2.5%;
 }
 
 #image-eco {
