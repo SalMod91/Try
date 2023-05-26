@@ -599,11 +599,6 @@
     transition: all 0.5s;
 }
 
-#required {
-    text-align: left;
-    padding-left: 25%;
-}
-
 /* Subscribe Form */
 #subscribe-banner {
     background: rgba(255, 255, 255, 0.6);
@@ -662,6 +657,12 @@
     background-color: #000000;
     color: #FFB018;
     transition: all 0.5s;
+}
+
+/* Required <p> */
+.required {
+    text-align: left;
+    padding-left: 25%;
 }
 
 /* Footer */
