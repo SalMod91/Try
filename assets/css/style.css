@@ -447,7 +447,6 @@
     width: 60%;
     position: relative;
     margin: 0 auto 40px;
-    overflow: auto;
 }
 
 .concept-flex {
@@ -490,6 +489,58 @@
 
 #concept-container .concept-flex:nth-child(2n+1) {
     flex-direction: row-reverse;
+}
+
+/* Eco-Friendly */
+#eco-container {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    position: relative;
+    margin: 0 auto 40px;
+    overflow: auto;
+}
+
+#eco-flex {
+    display:flex;
+}
+
+#eco-text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#eco-text>h3 {
+    font-family: "Indie Flower";
+    text-shadow: 2px 1px 3px black;
+    font-size: 300%;
+}
+
+#eco-text ul {
+    padding-left: 10%;
+}
+
+#eco-text li{
+    font-family: "Indie Flower";
+    font-size: 145%;
+    padding-top: 6.5%;
+    text-align: left;
+}
+
+#eco-image {
+    width: 50%
+}
+
+#eco-flex>div {
+    padding: 30px;
+}
+
+#image-eco {
+    width: 96%;
+    border: 10px black solid;
 }
 
 /* Story */
