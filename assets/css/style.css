@@ -457,6 +457,22 @@
 .concept-text {
     width: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.concept-text>h3 {
+    font-family: "Indie Flower";
+    text-shadow: 2px 1px 3px black;
+    font-size: 200%;
+}
+
+.concept-text>p {
+    font-family: "Indie Flower";
+    font-size: 145%;
+    padding-top: 1.5%;
 }
 
 .concept-image {
@@ -467,7 +483,7 @@
     padding: 30px;
 }
 
-.image-test {
+.image-about-me {
     width: 96%;
     border: 10px black solid;
 }
