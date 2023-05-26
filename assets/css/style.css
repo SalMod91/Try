@@ -303,7 +303,8 @@
     justify-content: center;
     font-family: "Fredericka the great";
     font-size: 400%;
-    text-align: center;    
+    text-align: center;
+    text-decoration: underline;
 }
 
 /* #location-banner h2 {
@@ -318,23 +319,28 @@
     height: 600px;
     position: relative;
     margin: 0 auto 40px;
-    padding: 0 30px;
+    padding: 0 1.5% 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#try {
-    background-color: yellow;
+#location-description {
+    background-color:   #FFB018;
     width: 29%;
-    height: 95%;
+    height: 90%;
     position: absolute;
     left: 30px;
+    margin-top: 30px;
 }
 
-#try2 {
+#location-map {
     background-color: black;
     width: 68%;
-    height: 95%;
+    height: 90%;
     position: absolute;
     right: 30px;
+    margin-top: 30px;
 }
 
 /* Events */
@@ -350,6 +356,7 @@
     font-family: "Fredericka the great";
     font-size: 400%;
     text-align: center; 
+    text-decoration: underline;
 }
 
 /* #events-banner h2 {
@@ -365,6 +372,7 @@
     position: relative;
     margin: 0 auto 40px;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #events-container span {
@@ -433,7 +441,6 @@
 #concept-container {
     background: rgba(255, 255, 255, 0.6);
     width: 60%;
-    /* height: 600px; */
     position: relative;
     margin: 0 auto 40px;
     overflow: auto;
