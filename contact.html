@@ -56,16 +56,16 @@
             </div>
         </section>
         
-        <!-- Contact form -->
         <main>
+            <!-- Contact Banner-->
             <section>
                 <div id="contact-banner">
                     <h2>Contact Me</h2>
                 </div>
+
+                <!-- Contact Form-->
                 <div id="contact-container">
-                    <h3>You want more infos about me or about the events?</h3>
-                    <h3>You have feedback, suggestions or events you want me to participate?</h3>
-                    <h3>Then contact me!</h3>
+                    <h3>You want more infos about me or about the events?<br>You have feedback, suggestions or events you want me to participate?<br><bold style="text-shadow: 2px 1px 3px black;">CONTACT ME!<bold></bold></h3>
                     
                     <form action="https://formdump.codeinstitute.net/" method="POST" id="contact-form">
                         
@@ -75,8 +75,8 @@
                         <label for="lname">Last Name*</label>
                         <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
 
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+                        <label for="contact-email">E-mail*</label>
+                        <input type="email" id="contact-email" name="contact-email" placeholder="Your E-mail" required>
 
                         <label for="message">Message*</label>
                         <textarea id="message" name="message" placeholder="Here you can write what you want to let me know!" required style="height: 200px"></textarea>
@@ -84,6 +84,22 @@
                         <input type="submit" value="Send">
                     </form>
                     <p id="required">*Required</p>
+                </div>
+                <!-- Subscribe Banner-->
+                <div id="subscribe-banner">
+                    <h2>Subscribe</h2>
+                </div>
+
+                <!-- Subscribe Form-->
+                <div id="subscribe-container">
+                    <h3>Subscribe using your E-mail and get <br>updated about <bold style="text-shadow: 2px 1px 3px black;">LOCATIONS</bold> and <bold style="text-shadow: 2px 1px 3px black;">EVENTS!</bold></h3>
+                    
+                    <form action="https://formdump.codeinstitute.net/" method="POST" id="subscribe-form">
+
+                        <label for="subscribe-email">E-mail*</label>
+                        <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Your E-mail" required>
+                        
+                        <input type="submit" value="Send">
                 </div>
             </section>
         </main>
