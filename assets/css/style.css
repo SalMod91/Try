@@ -474,7 +474,7 @@
     padding-top: 1.5%;
 }
 
-.concept-image {
+.concept-image-container {
     width: 50%
 }
 
@@ -482,7 +482,7 @@
     padding: 2.5%;
 }
 
-.image-about-me {
+.concept-image {
     width: 96%;
     border: 10px black solid;
 }
