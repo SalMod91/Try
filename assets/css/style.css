@@ -531,7 +531,7 @@
     white-space: nowrap;
 }
 
-#eco-image {
+#eco-image-container {
     width: 50%
 }
 
@@ -539,7 +539,7 @@
     padding: 2.5%;
 }
 
-#image-eco {
+#eco-image {
     width: 96%;
     border: 10px black solid;
 }
@@ -566,9 +566,34 @@
     position: relative;
     margin: 0 auto 40px;
     overflow: auto;
+    padding-bottom: 1.5%;
 }
 
+#story-flex {
+    display:flex;
+}
 
+#story-text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: 'Indie Flower';
+    font-size: 130%;
+    letter-spacing: 2px;
+    padding: 0 2.5%;
+}
+
+#story-image-container {
+    width: 50%;
+}
+
+#story-image {
+    width: 96%;
+    border: 10px black solid;
+}
 /* Contact Page */ 
 #contact-board-message {
     position:relative;
