@@ -326,7 +326,7 @@
     justify-content: center;
 }
 
-#location-description {
+#location-description-container {
     background-color:   #FFB018;
     width: 29%;
     height: 90%;
@@ -340,13 +340,13 @@
     text-align: center;
 }
 
-#location-description p {
+#location-description-container p {
     padding: 3%;
     font-family: merriweather;
     font-size: 130%;
 }
 
-#location-map {
+#location-map-container {
     background-color: black;
     width: 68%;
     height: 90%;
@@ -354,6 +354,11 @@
     right: 2%;
     margin-top: 30px;
     border: 5px solid black;
+}
+
+#google-map {
+    width: 100%;
+    height: 100%;
 }
 
 /* Events */
