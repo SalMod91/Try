@@ -264,20 +264,60 @@
     color: whitesmoke;
 }
 
-.menu-container-item-text {
-    display: inline;
-    text-align: center;
-    font-family: "Amatic SC";
+.menu-banner {
+    background: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    height: 120px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fredericka the great";
     font-size: 200%;
-    margin-left: 20px;
-    line-height: 1;
+    text-align: center; 
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
-.menu-container-item-text h3 {
-    font-family: "Fredericka the great";
-    text-decoration: underline;
-    margin-bottom: 30px;
-    line-height: 0;
+.menu-container {
+    background: rgba(255, 255, 255, 0.6);
+    width: 56.875%;
+    overflow: auto;
+    margin: 0 auto 2.08%;
+    padding: 1.5625%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-image-container {
+    width: 60%;
+    display: flex;
+}
+
+.img-menu {
+    width: 100%;
+    border: 10px solid black;
+}
+
+.menu-text-container {
+    display: flex;
+
+    margin-left: 20px;
+    width: 40%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-text-container p {
+    font-size: 170%;
+    font-family: "Indie Flower";
+}
+
+.menu-container:nth-child(4n+2) {
+    flex-direction: row-reverse;
 }
  
 
@@ -296,7 +336,7 @@
 #location-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 80%;
-    position: relative;
+    /* position: relative; */
     height: 120px;
     margin: 40px auto 0;
     display: flex;
@@ -351,7 +391,7 @@
     width: 68%;
     height: 90%;
     display: inline-block;
-    right: 2%;
+    /* right: 2%; */
     margin-top: 30px;
     border: 5px solid black;
 }
