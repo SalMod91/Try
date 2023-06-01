@@ -239,7 +239,7 @@
 #board-container {
     background: url(../images/chalkboard.jpg) no-repeat center center / 100% 100%;
     width: 600px;
-    height: 380px;
+    height: 360px;
     margin: 140px auto;
     display: flex;
 }
@@ -415,10 +415,12 @@
     margin: 0 auto 40px;
     padding-bottom: 30px;
     padding-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #events-container span {
-    width:24%;
+    width:21%;
     /* float: left; */
     text-align: center;
     border: 5px black solid;
@@ -427,13 +429,13 @@
     padding: 1%;
 }
 
-#events-left-margin {
+/* #events-left-margin {
     margin-left: 2%;
 }
 
 #events-right-margin {
     margin-right: 2%;
-}
+} */
 
 #events-container h3 {
     line-height: 3;
