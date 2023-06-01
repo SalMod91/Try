@@ -235,23 +235,20 @@
 }
 
 /* Chalkboard for all pages */
+/* Board */
 #board-container {
-    position: relative;
-    height: 360px;
-    width: 33.3%;
     background: url(../images/chalkboard.jpg) no-repeat center center / 100% 100%;
-    margin: 140px auto 0;
-
+    width: 600px;
+    height: 380px;
+    margin: 140px auto;
+    display: flex;
 }
 
+/* Black Frame */
 .frame-board {
     background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
-    height: 360px;
     width: 100%;
-    margin: 140px auto 0;
     z-index: 2;
-    position: absolute;
-    bottom: 0px;
 }
 
 /* Menu Page */
