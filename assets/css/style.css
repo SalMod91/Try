@@ -105,9 +105,9 @@
     border-bottom: 1px solid white;
 }
 
-/*Home Page*/
+/* Home Page */
 
-/* Home page hero image, background and welcome section */
+/* Hero image */
 #hero-image {
     height: 600px;
     width: 1420px;
@@ -118,46 +118,40 @@
     border: 10px solid black;
 }
 
-/* #welcome-message {
-    background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
-    width: 719px;
-    height: 100px;
-    z-index: 2;
-    color: whitesmoke;
+/* Chalkboard background container */
+#board-background {
+        position: relative; 
+        top: 415px;
+        width: 1459px;
+        height: 165px;;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* Pseudo-Child to make the background opaque without affecting the h1 */
+#board-background::before {    
+        content: "";
+        background: url(../images/chalkboard.jpg);
+        opacity: 0.8;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+}
+
+/* Heading inside the opaque background */
+#board-background h1 {
+    color: antiquewhite;
     font-family: 'Fredericka the Great';
-    font-size: 300%;
+    font-size: 460%;
     white-space: nowrap;
     text-align: center;
-} */
-
-/* #frame-board {
-    background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
-    width: 100%;
-    z-index: 3;
-} */
-/* #frame-board-home h1 {
+    text-shadow: 10px 10px 10px black;
     position: relative;
-    bottom: 60px;
-    font-family: 'Fredericka the Great';
-    font-size: 500%;
-    color: whitesmoke;
-    text-align: center;
-    background: url(../images/chalkboard.jpg) 
 }
 
-#frame-board-home h2 {
-    position: relative;
-    top: 60px;
-    font-family: 'Fredericka the Great';
-    font-size: 300%;
-    color: whitesmoke;
-    text-align: center;
-}
-
-#food-truck-icon {
-    width: 120px;
-    height: 120px;
-} */
 /* Div containing the summary boxes */
 .container {
     display: flex;
@@ -167,7 +161,7 @@
     margin: 0 auto;
 }
 
-/* Boxes and content*/
+/* Boxes and content */
 .container-item-left {
     position: relative;
     width: 700px;
@@ -261,6 +255,7 @@
 }
 
 /* Chalkboard for all pages */
+
 /* Board */
 #board-container {
     background: url(../images/chalkboard.jpg) no-repeat center center / 100% 100%;
