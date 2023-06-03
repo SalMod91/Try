@@ -118,18 +118,24 @@
     border: 10px solid black;
 }
 
-/* #home-banner {
-    background: url(../images/chalkboard.jpg) no-repeat center center/ 100% 100%;
-    width: 300px;
+/* #welcome-message {
+    background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
+    width: 719px;
     height: 100px;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    color: whitesmoke;
+    font-family: 'Fredericka the Great';
+    font-size: 300%;
+    white-space: nowrap;
+    text-align: center;
 } */
 
-#frame-board-home h1 {
+/* #frame-board {
+    background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
+    width: 100%;
+    z-index: 3;
+} */
+/* #frame-board-home h1 {
     position: relative;
     bottom: 60px;
     font-family: 'Fredericka the Great';
@@ -151,7 +157,7 @@
 #food-truck-icon {
     width: 120px;
     height: 120px;
-}
+} */
 /* Div containing the summary boxes */
 .container {
     display: flex;
@@ -199,7 +205,7 @@
 .container-item-text {
     display: inline;
     text-align: center;
-    font-family: "Amatic SC";
+    font-family: "Indie Flower";
     font-size: 200%;
     margin-left:20px;
 }
@@ -208,6 +214,10 @@
     font-family: "Fredericka the great";
     text-decoration: underline;
     margin-bottom: 30px;
+}
+
+.container-item-text p {
+    padding: 10px;
 }
 
 .container-item-button-left {
