@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
 }
 
 /* Backgrounds */
@@ -13,62 +12,37 @@
     background: #966F33 url(../images/cutting-board-salad.jpg) no-repeat center center / cover fixed;
 }
 
-/* Header, logo and navigation bar */
+/* Header, logo, big and small menu */
+
+/* Fixed position dark bar containing logo and big/small menu */
 #header {
     background-color: rgb(33, 33, 35);
-    overflow: hidden;
     width: 100%;
     height: 80px;
     position: fixed; 
     top: 0;
-    z-index: 3;
+    z-index: 8;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: absolute;
-    left: 5%;
-    z-index: 3;
-}
-
-.logo-2 {
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: absolute;
-    left: 5%;
-    z-index: 4;
-    opacity: 0%;
-}
-
+/* White logo with foodtruck's name */
 .logo-with-name {
-    width: 250px;
-    height: 88px;
-    margin-top: -5px;
+    width: 205px;
+    height: 75px;
     margin-bottom: 10px;
     position: absolute;
     left: 20px;
     z-index: 3;
 }
 
+/* Transparent colored logo with foodtruck's name on top of the white logo visible only on hover */
 .logo-with-name-2 {
-    width: 250px;
-    height: 88px;
-    margin-top: -5px;
+    width: 205px;
+    height: 75px;
     margin-bottom: 10px;
     position: absolute;
     left: 20px;
     z-index: 4;
     opacity: 0%;
-}
-
-.logo-2:hover {
-    opacity: 1.0;
-    transition: all 0.3s;
 }
 
 .logo-with-name-2:hover {
@@ -76,36 +50,97 @@
     transition: all 0.5s;
 }
 
-#list-menu {
+/* Navigation Menu visible above XXX width */
+#big-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
     font-family: Merriweather;
     list-style-type: none;
     float: right;
     line-height: 50px;
     font-size: 160%;
+    display: flex;
+    justify-content: end;
 }
 
-#list-menu li {
-    float: left;
+#big-menu li {
     padding: 14px 25px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-#list-menu a {
+#big-menu a {
+    color: white;
     text-decoration: none;
-    color:white;
 }
 
-#list-menu a:hover {
+/* Underline on hover of links */
+#big-menu a:hover {
     border-bottom: 1px solid #FFB018;
     color: #FFB018;
 }
 
+/* Underline to showcase active page */
 .active-page {
     border-bottom: 1px solid white;
 }
 
-/* Home Page */
+/* Invisible Checkbox, when checked the hidden menu will slide from the right side of the screen */
+#checkbox {
+    display: none;
+}
+
+/* Hamburger Icon visible only below XXX width, used to check the Checkbox */
+#small-menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    background: linear-gradient(
+        to bottom, 
+        white 20%, 
+        rgb(33, 33, 35) 10%, rgb(33, 33, 35) 40%, 
+        white 40%, white 60%, 
+        rgb(33, 33, 35) 20%, rgb(33, 33, 35) 80%, 
+        white 80%);
+    font-family: Merriweather;
+    font-size: 130%;
+    line-height: 2.4;
+    z-index: 5;
+}
+
+/* Navigation Menu hidden out of frame */
+#hidden-menu {
+    position: fixed;
+    top: 0;
+    width: 180px;
+    height: 23%;
+    transform: translateX(130%);
+    background-color: rgb(33, 33, 35);
+    transition: 0.5s;
+    list-style-type: none;
+    border-radius: 10px;
+    padding: 70px 10px;
+}
+
+#checkbox:checked + #small-menu #hidden-menu {
+    transform: translateX(-65%);
+}
+
+#small-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Underline on hover of links*/
+#small-menu a:hover {
+    border-bottom: 1px solid #FFB018;
+    color: #FFB018;
+}
+
+/* Home Page Section */
 
 /* Hero image */
 #hero-image {
@@ -120,25 +155,25 @@
 
 /* Chalkboard background container */
 #board-background {
-        position: relative; 
-        top: 415px;
-        width: 1459px;
-        height: 165px;;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    position: relative; 
+    top: 415px;
+    width: 1459px;
+    height: 165px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 /* Pseudo-Child to make the background opaque without affecting the h1 */
 #board-background::before {    
-        content: "";
-        background: url(../images/chalkboard-hero.jpg);
-        opacity: 0.8;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+    content: "";
+    background: url(../images/chalkboard-hero.jpg);
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 /* Heading inside the opaque background */
@@ -804,6 +839,32 @@ footer {
     justify-content: space-between;
 }
 
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 5%;
+    z-index: 3;
+}
+
+.logo-2 {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 5%;
+    z-index: 4;
+    opacity: 0%;
+}
+
+.logo-2:hover {
+    opacity: 1.0;
+    transition: all 0.3s;
+}
+
 #footer-flex > span {
     width: 33.3%;
     height: 80px;
@@ -838,3 +899,13 @@ footer h4 {
     color: #FFB018;
     transition: all 0.5s;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #big-menu {
+      display: none;
+    }
+    #small-menu {
+      display: flex;
+    }
+  }

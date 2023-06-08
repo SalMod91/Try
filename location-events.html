@@ -13,18 +13,24 @@
 </head>
 
 <body id="home-background">
-    <!-- Navigation Bar heavily inspired by Love Running project -->
-    <header>
+    <!-- Navigation Menu inspired by Love Running Project-->
+    <header id="header">
+            
+        <!-- Logo top left as Home button-->
+        <a href="index.html">
 
-        <nav id="header">
-            <!-- Logo top left as Home button-->
-            <a href="index.html">
-                <img src="assets/images/logo-name.png" alt="Logo of the food truck depicting a loaf of bread" class="logo-with-name">
-                <img src="assets/images/logo-name-2.png" alt="Logo of the food truck depicting a loaf of bread" class="logo-with-name-2">
-            </a>
+            <!-- White logo underneath the transparent colored one -->
+            <img src="assets/images/logo-name.png" alt="Logo of the food truck depicting a loaf of bread" class="logo-with-name">
 
-            <!--Navigation Links-->
-            <ul id="list-menu">
+            <!-- Colored logo with 0% opacity on top the white logo -->
+            <img src="assets/images/logo-name-2.png" alt="Logo of the food truck depicting a yellow loaf of bread" class="logo-with-name-2">
+        </a>
+
+        <!-- Main Menu visible above XXX width-->
+        <nav>
+            
+            <!-- Navigation Links -->
+            <ul id="big-menu">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -42,7 +48,33 @@
                 </li>
             </ul>
         </nav>
-
+        
+        <!-- Small Menu visible below XXX width -->
+        <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
+        <input type="checkbox" id="checkbox"/>
+        <!-- Hamburger Menu icon and flex container for Hidden Menu -->
+        <label id="small-menu" for="checkbox">
+            <nav>
+                <!-- Hidden Menu out of frame with Navigation Links-->
+                <ul id="hidden-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="location-events.html" class="active-page">Location & Events</a>
+                    </li>
+                    <li>
+                        <a href="about-me.html">Concept & Story</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </label>
     </header>
 
         <!-- Location Board -->
