@@ -942,7 +942,7 @@ footer {
     .container-item-left {
         width: 100%;
         margin: 0 0 15px 0;
-        height: 473px;
+        height: auto;
         padding-bottom: 0;
         display: flex;
         align-content: center;
@@ -953,7 +953,7 @@ footer {
     .container-item-right {
         width: 100%;
         margin: 0;
-        height: 473px;
+        height: auto;
         padding-bottom: 0;
         display: flex;
         align-content: center;
@@ -962,15 +962,15 @@ footer {
     }
     
     .container-item-img-left {
-        width: 360px;
-        height: 238px;
+        width: 410px;
+        height: 300px;
         border: 6px solid black;
         margin: 15px auto;
     }
     
     .container-item-img-right {
-        width: 360px;
-        height: 238px;
+        width: 410px;
+        height: 300px;
         border: 6px solid black;
         margin: 15px auto;
     }
