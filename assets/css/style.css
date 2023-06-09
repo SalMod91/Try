@@ -902,12 +902,136 @@ footer {
 /* Media queries */
 
 @media screen and (max-width: 768px) {
-
+    /* Header */
+    /* Turns the big menu invisible and enables the small menu and hidden menu */
     #big-menu {
       display: none;
     }
     #small-menu {
       display: flex;
+    }
+
+    /* Home page */
+    #hero-image {
+        height: 360px;
+        width: 88%;
+        margin: 100px auto 0;
+        border: 7px solid black;
+        min-width: 465px;
+    }
+
+    #board-background {
+    position: relative;
+    top: 220px;
+    width: 100%;
+    height: 80px;
+    }
+
+    #board-background h1 {
+        font-size: 200%;
+    }
+
+    .container {
+        width: 90%;
+        flex-wrap: wrap;
+        margin: 15px auto;
+        padding: 0;
+        min-width: 480px;
+    }
+
+    .container-item-left {
+        width: 100%;
+        margin: 0 0 15px 0;
+        height: 473px;
+        padding-bottom: 0;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-item-right {
+        width: 100%;
+        margin: 0;
+        height: 473px;
+        padding-bottom: 0;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .container-item-img-left {
+        width: 360px;
+        height: 238px;
+        border: 6px solid black;
+        margin: 15px auto;
+    }
+    
+    .container-item-img-right {
+        width: 360px;
+        height: 238px;
+        border: 6px solid black;
+        margin: 15px auto;
+    }
+    
+    .container-item-text {
+        display: inline;
+        text-align: center;
+        font-family: "Indie Flower";
+        font-size: 150%;
+        margin-left:20px;
+    }
+    
+    .container-item-text h3 {
+        margin-bottom: 30px;
+        font-size: 200%;
+    }
+    
+    .container-item-text p {
+        padding: 0 30px 15px 0;
+        font-size: 17px;
+    }
+
+    .container-item-button-left {
+        position: static;
+        font-size: 180%;
+        width: 200px;
+    }
+    
+    .container-item-button-right {
+        position: static;
+        font-size: 180%;
+        width: 200px;
+    }
+
+    /* Footer */
+    footer {
+        height: 100px;
+    }
+    
+    .logo, .logo-2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-2 {
+        margin-top: -60px;
+    }
+
+    .contact-row p {
+        font-size: 100%;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .social-links-row {
+        flex-direction: column;
+    }
+
+    .social-links-row i {
+        font-size: 150%;
+        margin: 4px 5px;
     }
   }
 
@@ -916,9 +1040,10 @@ footer {
     /* Home Page */
     #hero-image {
         height: 360px;
-        width: 90%;
+        width: 98%;
         margin: 100px auto 0;
         border: 5px solid black;
+        min-width: auto;
     }
 
     #board-background {
@@ -937,6 +1062,7 @@ footer {
         flex-wrap: wrap;
         margin: 15px 0 0 0;
         padding: 0;
+        min-width: auto;
     }
 
     .container-item-left {
@@ -1036,15 +1162,8 @@ footer {
 }
 
 @media screen and (max-width: 360px) {
-    
-    /* Home Page */
-    #hero-image {
-        height: 320px;
-        width: 90%;
-        margin: 100px auto 0;
-        border: 5px solid black;
-    }
 
+    /* Home Page */
     #board-background {
     position: relative;
     top: 220px;
