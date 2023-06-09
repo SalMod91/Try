@@ -116,7 +116,7 @@
     position: fixed;
     top: 0;
     width: 180px;
-    height: 23%;
+    height: 175px;
     transform: translateX(130%);
     background-color: rgb(33, 33, 35);
     transition: 0.5s;
