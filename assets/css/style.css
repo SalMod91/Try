@@ -975,13 +975,10 @@ footer {
     #hero-image {
         height: 360px;
         width: 94%;
-        margin: 100px auto 0;
-        border: 10px solid black;
-        min-width: 465px;
+        margin: 120px auto 0;
     }
 
     #board-background {
-        position: relative;
         top: 265px;
         width: 100%;
         height: 80px;
@@ -989,30 +986,44 @@ footer {
 
     .container {
         width: 100%;
-        flex-wrap: wrap;
-        margin: 15px auto;
-        padding: 0;
-        justify-content: center;
     }
 
-    .container-item-left, .container-item-right {
+    .container-item {
         width: 96%;
         flex-wrap: wrap;
-        margin: 15px auto;
-        padding: 0;
-        justify-content: center;
+        margin: 40px auto;
+        height: auto;
+
     }
 
-    .container-item-img-left {
-        width: 50%;
-        margin-left: 20px;
-        min-width: 420px;
+    .container-item-img {
+        width: 100%;
     }
 
-    .container-item-img-right {
-        width: 50%;
-        margin-right: 20px;
-        min-width: 420px;
+    .item-img-left, .item-img-right {
+        margin: 30px auto;
+        width: 575px;
+        height: 350px;
+    }
+
+    .container-item-description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container-item-description h2 {
+        margin: 0;
+        font-size: 350%;
+    }
+
+    .container-item-description p {
+        margin-top: 10px;
+        font-size: 200%;
+    }
+
+    .description-button {
+        font-size: 300%;
+        margin-bottom: 0px;
     }
 }
 
@@ -1028,10 +1039,10 @@ footer {
     /* Home page */
     #hero-image {
         height: 360px;
-        width: 88%;
+        width: 92%;
         margin: 100px auto 0;
         border: 7px solid black;
-        min-width: 465px;
+        min-width: 464px;
     }
 
     #board-background h1 {
@@ -1039,58 +1050,38 @@ footer {
     }
 
     .container {
-        width: 90%;
-        margin: 25px auto;
+        width: 93.5%;
+        margin: 0 auto;
         min-width: 480px;
     }
 
-    .container-item-left, .container-item-right {
+    .container-item {
         width: 100%;
-        margin: 0 0 15px 0;
-        height: auto;
-        padding-bottom: 0;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
     }
     
-    .container-item-img-left, .container-item-img-right {
+    .item-img-left, .item-img-right {
         width: 410px;
         height: 300px;
-        border: 6px solid black;
-        margin: 15px auto;
-        min-width: auto;
+        border: 7px solid black;
+        margin: 25px auto;
     }
     
-    .container-item-text {
-        display: inline;
-        text-align: center;
-        font-family: "Indie Flower";
-        font-size: 150%;
-        margin-left:20px;
+    .container-item-description {
+        margin-bottom: 25px;
     }
 
-    .container-item-text h3 {
-        margin-bottom: 30px;
-        font-size: 200%;
-    }
-    
-    .container-item-text p {
-        padding: 0 30px 15px 0;
-        font-size: 28px;
-    }
-    
-    .container-item-button-left, .container-item-button-right {
-        position: static;
+    .container-item-description h2 {
         font-size: 250%;
-        width: 200px;
     }
 
-    /* Footer */
-    footer {
-        height: 100px;
+    .container-item-description p {
+        font-size: 150%;
     }
+
+    .description-button {
+        font-size: 230%
+    }
+    /* Footer */
     
     .logo, .logo-2 {
         width: 60px;
@@ -1102,19 +1093,47 @@ footer {
     }
 
     .contact-row p {
-        font-size: 100%;
         padding-left: 10px;
     }
     
     .social-links-row {
-        flex-direction: column;
+        justify-content: end;
     }
-    
     .social-links-row i {
-        font-size: 150%;
-        margin: 4px 5px;
+        font-size: 250%;
+        margin: 4px 8px;
     }
   }
+
+/* Media screen only for footer */
+@media screen and (max-width: 645px) {
+
+    /* Footer */
+    footer {
+        height: 150px;
+        padding: 0;
+    }
+    .logo, .logo-2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-2 {
+        margin-top: -50px;
+    }
+
+    .contact-row p {
+        font-size: 120%;
+    }
+    
+    .social-links-row {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .social-links-row i {
+        font-size: 175%;
+    }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -1134,63 +1153,36 @@ footer {
     }
 
     #board-background {
-    top: 220px;
+    top: 265px;
     }
 
     #board-background h1 {
-        font-size: 200%;
+        font-size: 230%;
     }
 
     .container {
-        width: 100%;
         margin: 15px auto;
-        min-width: auto;
-    }
-
-    .container-item-left, .container-item-right {
-        height: 473px;
-    }
-
-    .container-item-right {
-        width: 100%;
-        margin: 0;
-        height: 473px;
-        padding-bottom: 0;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
+        min-width: 360px;
     }
     
-    .container-item-img-left {
-        width: 360px;
+    .item-img-left, .item-img-right {
+        width: 350px;
         height: 238px;
-        border: 6px solid black;
-        margin: 15px auto;
-    }
-    
-    .container-item-img-right {
-        width: 360px;
-        height: 238px;
-        border: 6px solid black;
-        margin: 15px auto;
-    }
-   
-    .container-item-text p {
-        font-size: 17px;
-    }
-
-    .container-item-button-left, .container-item-button-right {
-        font-size: 180%;
+        border: 5px solid black;
     }
 }
 
 @media screen and (max-width: 360px) {
 
     /* Home Page */
-    .container-item-img {
-        width: 97%;
-        height: 238px;
-        margin: 15px 0 15px 0;
+    #board-background h1 {
+        font-size: 200%;
+    }
+    .container {
+        min-width: 320px;
+    }
+
+    .item-img-left, .item-img-right {
+        width: 310px;
     }
 }
