@@ -1234,7 +1234,7 @@ footer {
     }
 
     /* Menu */
-    .menu-banner, .menu-container {
-        width: 320px;
+    .menu-banner {
+        padding: 20px 0;
     }
 }
