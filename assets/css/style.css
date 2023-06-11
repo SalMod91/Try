@@ -1108,8 +1108,13 @@ footer {
     }
 
     .menu-image-container {
-        width: 90%;
         margin: 0;
+        justify-content: center;
+    }
+
+    .img-menu {
+        width: 340px;
+        margin: 0 auto;
     }
 
     .menu-text-container {
@@ -1211,6 +1216,11 @@ footer {
     .menu-banner, .menu-container {
         width: 100%;
     }
+
+    .img-menu {
+        width: 350px;
+        border: 5px solid black;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1236,5 +1246,9 @@ footer {
     /* Menu */
     .menu-banner {
         padding: 20px 0;
+    }
+
+    .img-menu {
+        width: 310px;
     }
 }
