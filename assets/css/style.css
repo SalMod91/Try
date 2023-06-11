@@ -283,14 +283,14 @@
 .frame-board {
     background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
 }
 
 /* Menu Page */
 #menu-board-message {
-    position:relative;
-    top: 32%;
-    text-align: center;
     font-size: 400%;
     font-family: "Fredericka the great";
     color: whitesmoke;
@@ -298,25 +298,28 @@
 
 .menu-banner {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
+    width: 1060px;
     height: 120px;
     margin: 40px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Fredericka the great";
-    font-size: 200%;
     text-align: center; 
     text-transform: uppercase;
+}
+
+.menu-banner h2 {
+    font-size: 220%;
     text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 .menu-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 56.875%;
+    width: 1060px;
     overflow: auto;
-    margin: 0 auto 2.08%;
-    padding: 1.5625%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -325,6 +328,7 @@
 .menu-image-container {
     width: 60%;
     display: flex;
+    margin: 30px;
 }
 
 .img-menu {
@@ -334,7 +338,6 @@
 
 .menu-text-container {
     display: flex;
-    margin-left: 20px;
     width: 40%;
     justify-content: space-evenly;
     flex-direction: column;
@@ -959,6 +962,10 @@ footer {
     .container {
         width: 1024px;
     }
+
+    .img-menu {
+        width: 93%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1025,6 +1032,20 @@ footer {
         font-size: 300%;
         margin-bottom: 0px;
     }
+
+    /* Menu */
+    .menu-banner, .menu-container {
+        width: 768px
+    }
+
+    .img-menu {
+        width: 100%;
+    }
+
+    .menu-text-container p {
+        font-size: 130%;
+        line-height: 1.35;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1081,6 +1102,33 @@ footer {
     .description-button {
         font-size: 230%
     }
+    /* Board */
+    #board-container {
+        width: 480px;
+    }
+    /* Menu */
+    .menu-banner {
+        width: 480px;
+    }
+
+    .menu-container {
+        width: 480px
+    }
+
+    .menu-container, .menu-container:nth-child(4n+2) {
+        flex-direction: column;
+    }
+
+    .menu-image-container {
+        width: 90%;
+        margin: 0;
+    }
+
+    .menu-text-container {
+        width: 80%;
+        margin: 20px;
+    }
+
     /* Footer */
     
     .logo, .logo-2 {
@@ -1146,6 +1194,10 @@ footer {
     }
 
     /* Home Page */
+    .container {
+        min-width: auto;
+        width: 100%;
+    }
     #hero-image {
         width: 98%;
         border: 5px solid black;
@@ -1170,6 +1222,17 @@ footer {
         height: 238px;
         border: 5px solid black;
     }
+
+    /* Board */
+    #board-container {
+        width: 360px;
+        height: 300px;
+    }
+
+    /* Menu */
+    .menu-banner, .menu-container {
+        width: 360px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1184,5 +1247,16 @@ footer {
 
     .item-img-left, .item-img-right {
         width: 310px;
+    }
+
+    /* Board */
+    #board-container {
+        width: 320px;
+        height: 240px;
+    }
+
+    /* Menu */
+    .menu-banner, .menu-container {
+        width: 320px;
     }
 }
