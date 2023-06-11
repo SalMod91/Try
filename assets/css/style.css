@@ -1054,10 +1054,9 @@ footer {
     /* Home page */
     #hero-image {
         height: 360px;
-        width: 92%;
+        width: 97.5%;
         margin: 100px auto 0;
         border: 7px solid black;
-        min-width: 464px;
     }
 
     #board-background h1 {
@@ -1065,9 +1064,8 @@ footer {
     }
 
     .container {
-        width: 93.5%;
+        width: 100%;
         margin: 0 auto;
-        min-width: 480px;
     }
 
     .container-item {
@@ -1101,12 +1099,8 @@ footer {
         width: 480px;
     }
     /* Menu */
-    .menu-banner {
-        width: 480px;
-    }
-
-    .menu-container {
-        width: 480px
+    .menu-banner, .menu-container {
+        width: 100%;
     }
 
     .menu-container, .menu-container:nth-child(4n+2) {
@@ -1188,16 +1182,6 @@ footer {
     }
 
     /* Home Page */
-    .container {
-        min-width: auto;
-        width: 100%;
-    }
-    #hero-image {
-        width: 98%;
-        border: 5px solid black;
-        min-width: auto;
-    }
-
     #board-background {
     top: 265px;
     }
@@ -1225,7 +1209,7 @@ footer {
 
     /* Menu */
     .menu-banner, .menu-container {
-        width: 360px;
+        width: 100%;
     }
 }
 
