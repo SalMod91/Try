@@ -1202,10 +1202,12 @@ footer {
     .description-button {
         font-size: 230%
     }
+
     /* Board */
     #board-container {
         width: 480px;
     }
+    
     /* Menu */
     .menu-banner, .menu-container {
         width: 100%;
@@ -1340,6 +1342,7 @@ footer {
         justify-content: center;
         flex-direction: column;
     }
+
     .social-links-row i {
         font-size: 175%;
     }
@@ -1451,16 +1454,20 @@ footer {
         font-size: 200%;
     }
     .container {
-        min-width: 320px;
+        min-width: auto;
     }
 
     .item-img-left, .item-img-right {
-        width: 310px;
+        width: 280px;
+    }
+
+    .description-button {
+        width: 250px;
     }
 
     /* Board */
     #board-container {
-        width: 300px;
+        width: 320px;
         height: 240px;
     }
 
@@ -1468,7 +1475,7 @@ footer {
     #menu-board-message {
         font-size: 350%;
     }
-    
+
     .menu-banner {
         padding: 20px 0;
     }
@@ -1513,5 +1520,16 @@ footer {
 
     #events-container span {
         width: 270px;
+    }
+
+    /* Footer */
+    .contact-row p {
+        font-size: 100%;
+        line-height: 2.5;
+    }
+
+    .social-links-row i {
+        font-size: 150%;
+        margin: 7px 8px;
     }
 }
