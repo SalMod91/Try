@@ -114,7 +114,7 @@
     top: 0;
     width: 400px;
     height: 330px;
-    transform: translateX(130%);
+    right: -450px;
     background-color: rgb(33, 33, 35);
     transition: 0.5s;
     list-style-type: none;
@@ -125,17 +125,17 @@
     font-family: Merriweather;
 }
 
-#checkbox:checked + #small-menu #hidden-menu {
-    transform: translateX(-65%);
+#checkbox:checked ~ #hidden-menu {
+    right: -70px;
 }
 
-#small-menu a {
+#hidden-menu a {
     text-decoration: none;
     color: white;
 }
 
 /* Underline on hover of links*/
-#small-menu a:hover {
+#hidden-menu a:hover {
     border-bottom: 1px solid #FFB018;
     color: #FFB018;
 }
@@ -234,7 +234,8 @@
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    width: 30%
+    width: 30%;
+    align-items: center;
 }
 
 .container-item-description h2 {
@@ -252,14 +253,17 @@
 }
 
 .description-button {
-    font-size: 230%;
-    font-family: "Fredericka the great";
     background-color: #FFB018;
     color: #000000;
+    text-decoration: none;
+    font-size: 230%;
+    font-family: "Fredericka the great";
     width: 180px;
     margin-bottom: 25px;
-    border-radius: 10px;
     cursor: pointer;
+    border: 2px solid black;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .description-button:hover {
@@ -852,6 +856,7 @@ footer {
     .description-button {
         font-size: 350%;
         width: 300px;
+        height: 75px;
     }
 
     /* Location & Events */
@@ -1044,6 +1049,7 @@ footer {
 
     .description-button {
         font-size: 300%;
+        height: 62px;
         margin-bottom: 0px;
     }
 
@@ -1147,6 +1153,10 @@ footer {
         line-height: 2.2;
     }
 
+    #checkbox:checked ~ #hidden-menu {
+        right: -40px;
+    }
+
     /* Home page */
     #hero-image {
         height: 360px;
@@ -1186,10 +1196,6 @@ footer {
 
     .container-item-description p {
         font-size: 150%;
-    }
-
-    .description-button {
-        font-size: 230%
     }
 
     /* Board */
@@ -1359,6 +1365,10 @@ footer {
         height: 175px;
         font-size: 130%;
         line-height: 2.4;
+    }
+
+    #checkbox:checked ~ #hidden-menu {
+        right: -5px;
     }
 
     /* Home Page */
