@@ -13,7 +13,8 @@
 </head>
 
 <body id="home-background">
-    <!-- Navigation Menu inspired by Love Running Project-->
+
+    <!-- Container of the logo and navigation links that sticks to the top -->
     <header id="header">
             
         <!-- Logo top left as Home button-->
@@ -49,12 +50,13 @@
             </ul>
         </nav>
         
-        <!-- Small Menu visible below XXX width -->
-        <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
-        <input type="checkbox" id="checkbox"/>
-        <!-- Hamburger Menu icon and flex container for Hidden Menu -->
-        <label id="small-menu" for="checkbox">
-            <nav>
+        <!-- Small Menu that is only visible below 1025px width -->
+        <nav>
+            <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
+            <input type="checkbox" id="checkbox"/>
+            
+            <!-- Hamburger Menu icon and flex container for Hidden Menu -->
+            <label id="small-menu" for="checkbox">
                 <!-- Hidden Menu out of frame with Navigation Links-->
                 <ul id="hidden-menu">
                     <li>
@@ -73,18 +75,16 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </label>
+            </label>
+        </nav>
     </header>
 
         <!-- Concept & Story Board -->
         <section>
             <div id="board-container">
-                <span class="frame-board">
-                    <span id="about-me-board-message">
-                        <h1>Concept & Story</h1>
-                    </span>
-                </span>
+                <div class="frame-board">
+                    <h1 id="about-me-board-message">Concept & Story</h1>
+                </div>
             </div>
         </section>
         <main>
@@ -96,6 +96,7 @@
 
                 <!-- Concept content -->
                 <div id="concept-container">
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Everything Home Cooked</h3>
@@ -103,19 +104,22 @@
                         </div>
                         <div class="concept-image-container"><img src="assets/images/home-cooking.jpg" alt="Image showing a woman cooking at home" class="concept-image"></div>
                     </div>
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Meat from local butcher</h3>
-                            <p>Be it chicken meat, beef or pork:<br> all meat products come from <br> <bold class="text-shadow">Fictional Butcher Name</bold></p>
+                            <p>Be it chicken meat, beef or pork:<br> all meat products come from <br> <span class="text-shadow">Fictional Butcher Name</span></p>
                         </div>
                         <div class="concept-image-container"><img src="assets/images/meat-grind.jpeg" alt="Image showing minced meat" class="concept-image"></div>
                     </div>
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Small menu<br>=<br>Fresh Ingredients!</h3>
                         </div>
                         <div class="concept-image-container"><img src="assets/images/small-fresh.jpg" alt="Image showing a Gnome in the snow" class="concept-image"></div>
                     </div>
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Sauces</h3>
@@ -123,13 +127,15 @@
                         </div>
                         <div class="concept-image-container"><img src="assets/images/sauce.jpg" alt="Image showing different sauces in cups on a table" class="concept-image"></div>
                     </div>
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Bread</h3>
-                            <p>All bakery products come from the local bakery <br> <bold class="text-shadow">Fictional Bakery Name</bold></p>
+                            <p>All bakery products come from the local bakery <br> <span class="text-shadow">Fictional Bakery Name</span></p>
                         </div>
                         <div class="concept-image-container"><img src="assets/images/loaf-bread.jpg" alt="Image showing 2 loaves of bread" class="concept-image"></div>
                     </div>
+
                     <div class="concept-flex">
                         <div class="concept-text">
                             <h3>Time makes everything better</h3>
@@ -143,9 +149,9 @@
                     <div id="eco-text">
                         <h3>Protect the environment</h3>
                             <ul>
-                                <li><bold class="text-shadow">100%</bold> climate neutral packaging for my products</li>
-                                <li><bold class="text-shadow">100%</bold> compensation of CO2 emissions</li>
-                                <li><bold class="text-shadow">100%</bold> good conscience for me and my customers</li>
+                                <li><span class="text-shadow">100%</span> climate neutral packaging for my products</li>
+                                <li><span class="text-shadow">100%</span> compensation of CO2 emissions</li>
+                                <li><span class="text-shadow">100%</span> good conscience for me and my customers</li>
                             </ul>
                     </div>
                     <div id="eco-image-container">

@@ -13,7 +13,8 @@
 </head>
 
 <body id="home-background">
-    <!-- Navigation Menu inspired by Love Running Project-->
+
+    <!-- Container of the logo and navigation links that sticks to the top -->
     <header id="header">
             
         <!-- Logo top left as Home button-->
@@ -49,12 +50,13 @@
             </ul>
         </nav>
         
-        <!-- Small Menu visible below XXX width -->
-        <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
-        <input type="checkbox" id="checkbox"/>
-        <!-- Hamburger Menu icon and flex container for Hidden Menu -->
-        <label id="small-menu" for="checkbox">
-            <nav>
+        <!-- Small Menu that is only visible below 1025px width -->
+        <nav>
+            <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
+            <input type="checkbox" id="checkbox"/>
+            
+            <!-- Hamburger Menu icon and flex container for Hidden Menu -->
+            <label id="small-menu" for="checkbox">
                 <!-- Hidden Menu out of frame with Navigation Links-->
                 <ul id="hidden-menu">
                     <li>
@@ -73,18 +75,16 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </label>
+            </label>
+        </nav>
     </header>
 
         <!-- Location Board -->
         <section>
             <div id="board-container">
-                <span class="frame-board">
-                    <span id="location-board-message">
-                    <h1>Location & Events</h1>
-                    </span>
-                </span>
+                <div class="frame-board">
+                    <h1 id="location-board-message">Location & Events</h1>
+                </div>
             </div>
         </section>
         

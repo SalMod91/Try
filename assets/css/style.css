@@ -291,7 +291,7 @@
 
 /* Menu Page */
 #menu-board-message {
-    font-size: 400%;
+    font-size: 600%;
     font-family: "Fredericka the great";
     color: whitesmoke;
 }
@@ -360,7 +360,7 @@
 /* Location */
 #location-board-message {
     text-align: center;
-    font-size: 400%;
+    font-size: 600%;
     font-family: "Fredericka the great";
     color: whitesmoke;
 }
@@ -481,7 +481,7 @@
 /* Concept & Story Page */
 #about-me-board-message {
     text-align: center;
-    font-size: 400%;
+    font-size: 600%;
     font-family: "Fredericka the great";
     color: whitesmoke;
 }
@@ -533,10 +533,6 @@
     font-family: "Indie Flower";
     font-size: 145%;
     padding: 0 20px;
-}
-
-.text-shadow {
-    text-shadow: 2px 1px 3px black;
 }
 
 .concept-image-container {
@@ -661,15 +657,15 @@
 /* Contact Page */ 
 #contact-board-message {
     text-align: center;
-    font-size: 400%;
+    font-size: 600%;
     font-family: "Fredericka the great";
     color: whitesmoke;
 }
 
-#contact-banner {
+/* Banner used also for Subscribe form */
+.contact-banner {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
+    width: 1152px;
     height: 120px;
     margin: 40px auto 0;
     display: flex;
@@ -682,10 +678,10 @@
     text-decoration: underline;
 }
 
-#contact-container {
+/* Container used also for Subscribe form */
+.contact-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
+    width: 1152px;
     margin: 0 auto 40px;
     overflow: auto;
     padding-bottom: 30px;
@@ -694,15 +690,15 @@
     font-size: 130%;
 }
 
-/* Contact Form */
-#contact-form {
-    width: 50%;
+/* Contact and Subscribe Form */
+.contact-form {
+    width: 576px;
     padding: 30px;
     text-align: left;
     margin: 0 auto;
 }
 
-#contact-form>input[type=text], #contact-form>input[type=email], #contact-form>textarea {
+.contact-form>input[type=text], .contact-form>input[type=email], .contact-form>textarea {
     width: 96%;
     padding: 10px;
     border: 2px solid black;
@@ -710,77 +706,17 @@
     margin-bottom: 15px;
 }
 
-#contact-form>input[type=submit] {
+.form-submit {
     font-size: 250%;
     font-family: "Fredericka the great";
     background-color: #FFB018;
     color: #000000;
     border-radius: 5px;
-    width: 25%;
+    width: 150px;
     cursor: pointer;
 }
 
-#contact-form>input[type=submit]:hover {
-    background-color: #000000;
-    color: #FFB018;
-    transition: all 0.5s;
-}
-
-/* Subscribe Form */
-#subscribe-banner {
-    background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
-    height: 120px;
-    margin: 40px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fredericka the great";
-    font-size: 300%;
-    text-align: center; 
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-#subscribe-container {
-    background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
-    margin: 0 auto 40px;
-    overflow: auto;
-    padding-bottom: 30px;
-    text-align: center;
-    font-family: "Indie Flower";
-    font-size: 130%;
-}
-
-#subscribe-form {
-    width: 50%;
-    padding: 30px;
-    text-align: left;
-    margin: 0 auto;
-}
-
-#subscribe-form>input[type=email] {
-    width: 96%;
-    padding: 10px;
-    border: 2px solid black;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-#subscribe-form>input[type=submit] {
-    font-size: 250%;
-    font-family: "Fredericka the great";
-    background-color: #FFB018;
-    color: #000000;
-    border-radius: 5px;
-    width: 25%;
-    cursor: pointer;
-}
-
-#subscribe-form>input[type=submit]:hover {
+.form-submit:hover {
     background-color: #000000;
     color: #FFB018;
     transition: all 0.5s;
@@ -790,6 +726,12 @@
 .required {
     text-align: left;
     padding-left: 25%;
+}
+
+/* Rule used to make specific parts of paragraphs bold and highlight with a shadow */
+.text-shadow {
+    text-shadow: 2px 1px 3px black;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -817,7 +759,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-  
+
 .logo, .logo-2 {
     width: 75px;
     height: 75px;
@@ -1005,6 +947,20 @@ footer {
     #events-container div {
         width: 452px; 
     }
+
+    /* Concept & Story */
+    #concept-banner, #concept-container, #eco-container, #story-banner, #story-container {
+        width: 1024px;
+    }
+
+    /* Contact */
+    #contact-banner, #contact-container, #subscribe-banner, #subscribe-container {
+        width: 1024px;
+    }
+
+    #contact-form, #subscribe-form {
+        width: 512px;
+    }
 }
 
 @media screen and (max-width: 1140px) {
@@ -1137,6 +1093,48 @@ footer {
     #events-container div {
         width: 330px; 
     }
+
+    /* Concept & Story */
+    #concept-banner, #concept-container, #eco-container, #story-banner, #story-container {
+        width: 768px;
+    }
+
+    .concept-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .concept-text {
+        width: 100%;
+    }
+
+    #concept-container .concept-flex:nth-child(2n+1) {
+        flex-direction: column-reverse;
+    }
+
+    #eco-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #eco-image-container {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #eco-image {
+        width: 475px;
+    }
+
+    #eco-text, #story-text {
+        width: 70%;
+    }
+
+    #story-container {
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1225,7 +1223,8 @@ footer {
 
     /* Location & Events */
     #location-banner, #location-container {
-        width: 480px;
+        width: 100%;
+        max-width: 719px;
     }
 
     #location-container {
@@ -1256,7 +1255,8 @@ footer {
     }
 
     #events-banner, #events-container {
-        width: 480px;
+        width: 100%;
+        max-width: 719px;
     }
 
     #events-container {
@@ -1269,7 +1269,7 @@ footer {
     }
 
     #events-container div {
-        width: 185px; 
+        width: 210px; 
     }
 
     #events-container h3 {
@@ -1282,6 +1282,19 @@ footer {
 
     #events-container {
         font-size: 80%;
+    }
+
+    /* Concept & Story */
+    #about-me-board-message {
+        font-size: 550%;
+    }
+
+    #concept-banner, #concept-container, #eco-container, #story-banner, #story-container {
+        width: 100%;
+    }
+
+    .concept-image, #eco-image, #story-image {
+        width: 420px;
     }
 
     /* Footer */
@@ -1386,17 +1399,18 @@ footer {
 
     /* Location & Events */
     #location-board-message {
-        font-size: 275%;
+        font-size: 402%;
     }
 
     #location-banner, #events-banner {
         font-size: 225%;
-        width: 360px;
+        width: 100%;
+        max-width: auto;
     }
     
     #location-container {
         height: 450px;
-        width: 360px;
+        width: 100%;
     }
 
     #location-description-container {
@@ -1419,7 +1433,8 @@ footer {
     }
 
     #events-container {
-        width: 360px;
+        width: 100%;
+        max-width: auto;
         padding-top: 0;
         padding-bottom: 20px;
     }
@@ -1434,6 +1449,28 @@ footer {
 
     #events-container h4 {
         line-height: 1.5;
+    }
+
+    /* Concept & Story */
+    #about-me-board-message {
+        font-size: 450%;
+    }
+
+    #concept-banner {
+        font-size: 250%;
+    }
+
+    .concept-image, #eco-image, #story-image {
+        width: 310px;
+        border: 5px solid black;
+    }
+
+    .concept-image {
+        height: 270px;
+    }
+    
+    #story-image, #eco-image {
+        height: 310px;
     }
 }
 
@@ -1463,7 +1500,7 @@ footer {
 
     /* Menu */
     #menu-board-message {
-        font-size: 350%;
+        font-size: 500%;
     }
 
     .menu-banner {
@@ -1476,16 +1513,11 @@ footer {
 
     /* Location & Events */
     #location-board-message {
-        font-size: 210%;
+        font-size: 360%;
     }
 
     #location-banner, #events-banner {
-        width: 303px;
         font-size: 210%;
-    }
-    
-    #location-container {
-        width: 303px;
     }
 
     #location-description-container {
@@ -1503,12 +1535,25 @@ footer {
         height: 227px;
     }
 
-    #events-container {
-        width: 303px;
-    }
-
     #events-container div {
         width: 221px;
+    }
+
+    /* Concept & Story */
+    #about-me-board-message {
+        font-size: 392%;
+    }
+
+    #concept-banner {
+        font-size: 250%;
+    }
+
+    .concept-image, #eco-image, #story-image {
+        width: 280px;
+    }
+    
+    #story-image, #eco-image {
+        height: 280px;
     }
 
     /* Footer */

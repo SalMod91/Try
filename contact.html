@@ -13,7 +13,8 @@
 </head>
 
 <body id="home-background">
-    <!-- Navigation Menu inspired by Love Running Project-->
+
+    <!-- Container of the logo and navigation links that sticks to the top -->
     <header id="header">
             
         <!-- Logo top left as Home button-->
@@ -49,12 +50,13 @@
             </ul>
         </nav>
         
-        <!-- Small Menu visible below XXX width -->
-        <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
-        <input type="checkbox" id="checkbox"/>
-        <!-- Hamburger Menu icon and flex container for Hidden Menu -->
-        <label id="small-menu" for="checkbox">
-            <nav>
+        <!-- Small Menu that is only visible below 1025px width -->
+        <nav>
+            <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
+            <input type="checkbox" id="checkbox"/>
+            
+            <!-- Hamburger Menu icon and flex container for Hidden Menu -->
+            <label id="small-menu" for="checkbox">
                 <!-- Hidden Menu out of frame with Navigation Links-->
                 <ul id="hidden-menu">
                     <li>
@@ -73,36 +75,34 @@
                         <a href="contact.html" class="active-page">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </label>
+            </label>
+        </nav>
     </header>
 
         <!-- Contact Board -->
         <section>
             <div id="board-container">
-                <span class="frame-board">
-                    <span id="contact-board-message">
-                        <h1>Contact</h1>
-                    </span>
-                </span>
+                <div class="frame-board">
+                    <h1 id="contact-board-message">Contact</h1>
+                </div>
             </div>
         </section>
         
         <main>
             <!-- Contact Banner-->
             <section>
-                <div id="contact-banner">
+                <div class="contact-banner">
                     <h2>Contact Me</h2>
                 </div>
 
                 <!-- Contact Form-->
-                <div id="contact-container">
-                    <h3>You want more infos about me or about the events?<br>You have feedback, suggestions or events you want me to participate?<br><bold style="text-shadow: 2px 1px 3px black;">CONTACT ME!<bold></bold></h3>
+                <div class="contact-container">
+                    <h3>You want more infos about me or about the events?<br>You have feedback, suggestions or events you want me to participate?<br><span class="text-shadow">CONTACT ME!</span></h3>
                     
-                    <form action="https://formdump.codeinstitute.net/" method="POST" id="contact-form">
+                    <form action="https://formdump.codeinstitute.net/" method="POST" class="contact-form">
                         
                         <label for="fname">First Name*</label>
-                        <input type="text" id="name" name="firstname" placeholder="Your First Name" required>
+                        <input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
                         
                         <label for="lname">Last Name*</label>
                         <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
@@ -113,26 +113,26 @@
                         <label for="message">Message*</label>
                         <textarea id="message" name="message" placeholder="Here you can write what you want to let me know!" required style="height: 200px"></textarea>
 
-                        <input type="submit" value="Send">
+                        <input class="form-submit" type="submit" value="Send">
                     </form>
                     <p class="required">*Required</p>
                 </div>
                 <!-- Subscribe Banner-->
-                <div id="subscribe-banner">
+                <div class="contact-banner">
                     <h2>Subscribe</h2>
                 </div>
 
                 <!-- Subscribe Form-->
-                <div id="subscribe-container">
+                <div class="contact-container">
                     
-                    <h3>Subscribe using your E-mail and get <br>updated about <bold style="text-shadow: 2px 1px 3px black;">LOCATIONS</bold> and <bold style="text-shadow: 2px 1px 3px black;">EVENTS!</bold></h3>
+                    <h3>Subscribe using your E-mail and get <br>updated about <span class="text-shadow">LOCATIONS</span> and <span class="text-shadow">EVENTS!</span></h3>
                     
-                    <form action="https://formdump.codeinstitute.net/" method="POST" id="subscribe-form">
+                    <form action="https://formdump.codeinstitute.net/" method="POST" class="contact-form">
 
                         <label for="subscribe-email">E-mail*</label>
                         <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Your E-mail" required>
                         
-                        <input type="submit" value="Send">
+                        <input class="form-submit" type="submit" value="Send">
                     </form>
                     <p class="required">*Required</p>
                 </div>
