@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Welcome to Lujain's Foodtruck! Enjoy delicious homecooked meals, explore our Menu, find our Location, learn about my Concept and Story and get in touch with me. Join me for a mouthwatering experience!">
+    <meta name="keywords" content="foodtruck, lujain, homecooking, sandwich, menu">
 
     <link rel="icon" href="assets/favicon/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -48,13 +48,14 @@
                 </li>
             </ul>
         </nav>
-        
+
         <!-- Small Menu that is only visible below 1025px width -->
-        <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
-        <input type="checkbox" id="checkbox"/>
-        <!-- Hamburger Menu icon and flex container for Hidden Menu -->
-        <label id="small-menu" for="checkbox">
-            <nav>
+        <nav>
+            <!-- Invisible Checkbox in order to prompt the transition of the Hidden Menu -->
+            <input type="checkbox" id="checkbox"/>
+            
+            <!-- Hamburger Menu icon and flex container for Hidden Menu -->
+            <label id="small-menu" for="checkbox">
                 <!-- Hidden Menu out of frame with Navigation Links-->
                 <ul id="hidden-menu">
                     <li>
@@ -73,8 +74,8 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </label>
+            </label>
+        </nav>
     </header>
     
     <main>
@@ -82,9 +83,9 @@
             <!-- Div used as a flex container with the Hero Image as background -->
             <div id="hero-image">
                 <!-- Transparent chalkboard with pseudo-child and h1-->
-                <span id="board-background">
+                <div id="board-background">
                     <h1>Lujain's Foodtruck!</h1>
-                </span>
+                </div>
             </div>
         </section>
     
@@ -95,33 +96,37 @@
             <!-- Menu Box Top Left -->
             <div class="container-item">
                 <!-- Image Container -->
-                <span class="container-item-img">
+                <div class="container-item-img">
                     <img src="assets/images/sandwich.jpg" alt="An image depicting a tasty looking sandwich" class="item-img-left">
-                </span>
+                </div>
                 <!-- Description and Button Container -->
-                <span class="container-item-description">
+                <div class="container-item-description">
                     <h2>Menu</h2>
                     <p>Here you can enjoy my Homecooking!</p>
                     <a href="menu.html">
-                        <button class="description-button">Menu</button>
+                        <span>
+                            <button class="description-button">Menu</button>
+                        </span>
                     </a>
-                </span>
+                </div>
             </div>
         
             <!-- Location Box Top Right -->
             <div class="container-item">
                 <!-- Image Container -->
-                <span class="container-item-img">
+                <div class="container-item-img">
                     <img src="assets/images/location.jpg" alt="An image in black and white depicting a map and the GPS symbol" class="item-img-right">
-                </span>
+                </div>
                 <!-- Description and Button Container -->
-                <span class="container-item-description">
+                <div class="container-item-description">
                     <h2>Location</h2>
                     <p>This is where you'll find me!</p>
                     <a href="location-events.html">
-                        <button class="description-button">Location</button>
+                        <span>
+                            <button class="description-button">Location</button>
+                        </span>
                     </a>
-                </span>
+                </div>
             </div>
 
         </section>
@@ -132,33 +137,37 @@
             <!-- Concept & Story Box Bottom Left -->
             <div class="container-item">
                 <!-- Image Container -->
-                <span class="container-item-img">
+                <div class="container-item-img">
                     <img src="assets/images/lulu.jpg" alt="An image depicting LuLu, the owner of the Foodtruck" class="item-img-left">
-                </span>
+                </div>
                 <!-- Description and Button Container -->
-                <span class="container-item-description">
+                <div class="container-item-description">
                     <h2>About Me</h2>
                     <p>Find out more about me!</p>
                     <a href="about-me.html">
-                        <button class="description-button">About Me</button>
+                        <span>
+                            <button class="description-button">About Me</button>
+                        </span>
                     </a>
-                </span>
+                </div>
             </div>
         
             <!-- Contact Box Bottom Right -->
             <div class="container-item">
                 <!-- Image Container -->
-                <span class="container-item-img">
+                <div class="container-item-img">
                     <img src="assets/images/old-phone.jpeg" alt="An image depicting an old dial phone" class="item-img-right">
-                </span>
+                </div>
                 <!-- Description and Button Container -->
-                <span class="container-item-description">
+                <div class="container-item-description">
                     <h2>Contact</h2>
                     <p>Your direct line to me!</p>
                     <a href="contact.html">
-                        <button class="description-button">Contact</button>
+                        <span>
+                            <button class="description-button">Contact</button>
+                        </span>
                     </a>
-                </span>
+                </div>
             </div>
 
         </section>

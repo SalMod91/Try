@@ -298,7 +298,7 @@
 
 .menu-banner {
     background: rgba(255, 255, 255, 0.6);
-    width: 1060px;
+    width: 1152px;
     height: 120px;
     margin: 40px auto 0;
     display: flex;
@@ -317,7 +317,7 @@
 
 .menu-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 1060px;
+    width: 1152px;
     overflow: auto;
     margin: 0 auto;
     display: flex;
@@ -455,7 +455,7 @@
     flex-wrap: wrap;
 }
 
-#events-container span {
+#events-container div {
     width: 315px;
     text-align: center;
     border: 5px black solid;
@@ -489,8 +489,7 @@
 /* Concept */
 #concept-banner {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
+    width: 1152px;
     height: 120px;
     margin: 40px auto 0;
     display: flex;
@@ -505,21 +504,22 @@
 
 #concept-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
+    width: 1152px;
     position: relative;
     margin: 0 auto 40px;
+    padding: 30px 0;
 }
 
 .concept-flex {
     display:flex;
+    padding: 20px;
 }
 
 .concept-text {
     width: 50%;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -532,19 +532,23 @@
 .concept-text>p {
     font-family: "Indie Flower";
     font-size: 145%;
-    padding-top: 1.5%;
+    padding: 0 20px;
+}
+
+.text-shadow {
+    text-shadow: 2px 1px 3px black;
 }
 
 .concept-image-container {
-    width: 50%
-}
-
-.concept-flex>div {
-    padding: 2.5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .concept-image {
-    width: 96%;
+    width: 475px;
+    height: 317px;
     border: 10px black solid;
 }
 
@@ -555,29 +559,25 @@
 /* Eco-Friendly */
 #eco-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
+    width: 1152px;
     margin: 0 auto 40px;
-    overflow: auto;
-}
-
-#eco-flex {
-    display:flex;
+    display: flex;
 }
 
 #eco-text {
     width: 50%;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    padding: 20px;
 }
 
 #eco-text>h3 {
     font-family: "Indie Flower";
     text-shadow: 2px 1px 3px black;
     font-size: 300%;
+    text-decoration: underline;
 }
 
 #eco-text ul {
@@ -589,26 +589,26 @@
     font-size: 145%;
     padding-top: 6.5%;
     text-align: left;
-    white-space: nowrap;
 }
 
 #eco-image-container {
-    width: 50%
-}
-
-#eco-flex>div {
-    padding: 2.5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 #eco-image {
-    width: 96%;
+    width: 475px;
+    height: 400px;
     border: 10px black solid;
 }
 
 /* Story */
 #story-banner {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
+    width: 1152px;
     position: relative;
     height: 120px;
     margin: 40px auto 0;
@@ -619,19 +619,17 @@
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 #story-container {
     background: rgba(255, 255, 255, 0.6);
-    width: 60%;
-    position: relative;
+    width: 1152px;
     margin: 0 auto 40px;
-    overflow: auto;
-    padding-bottom: 1.5%;
-}
-
-#story-flex {
-    display:flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 #story-text {
@@ -639,20 +637,24 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    align-content: center;
     flex-direction: column;
     font-family: 'Indie Flower';
-    font-size: 130%;
-    letter-spacing: 2px;
-    padding: 0 2.5%;
+    font-size: 150%;
+    letter-spacing: 0px;
+    padding: 20px 40px;
 }
 
 #story-image-container {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
 }
 
 #story-image {
-    width: 96%;
+    width: 475px;
+    height: 475px;
     border: 10px black solid;
 }
 
@@ -932,13 +934,13 @@ footer {
         width: 1280px;
     }
 
-    #events-container span {
+    #events-container div {
         width: 275px;
     }
 }
 
 @media screen and (max-width: 1280px) {
-
+    
     /* Home Page */
     #hero-image {
         width: 1004px;
@@ -963,6 +965,11 @@ footer {
     .item-img-left, .item-img-right {
         width: 447px;
         height: 430px;
+    }
+
+    /* Menu */
+    .menu-banner, .menu-container {
+        width: 1024px;
     }
 
     /* Location & Events */
@@ -995,12 +1002,13 @@ footer {
         width: 1024px;
     }
 
-    #events-container span {
+    #events-container div {
         width: 452px; 
     }
 }
 
 @media screen and (max-width: 1140px) {
+    
     /* Header */
     .logo-with-name, .logo-with-name-2 {
         width: 175px;
@@ -1015,28 +1023,10 @@ footer {
     #big-menu li {
         padding: 14px 20px;
     }
-
-    /* Home Page */
-    /* #hero-image {
-        width: 1004px;
-    }
-
-    .container {
-        width: 1024px;
-    }
-
-    .item-img-left, .item-img-right {
-        width: 447px;
-        height: 430px;
-    } */
-
-    /* Menu */
-    .img-menu {
-        width: 93%;
-    }   
 }
 
 @media screen and (max-width: 1024px) {
+   
     /* Header */
     /* Turns the big menu invisible and enables the small menu and hidden menu */
     #big-menu {
@@ -1144,12 +1134,13 @@ footer {
         width: 768px;
     }
 
-    #events-container span {
+    #events-container div {
         width: 330px; 
     }
 }
 
 @media screen and (max-width: 768px) {
+    
     /* Header */
     #hidden-menu {
         width: 335px;
@@ -1232,7 +1223,7 @@ footer {
         margin: 20px;
     }
 
-        /* Location & Events */
+    /* Location & Events */
     #location-banner, #location-container {
         width: 480px;
     }
@@ -1277,7 +1268,7 @@ footer {
         font-size: 250%;
     }
 
-    #events-container span {
+    #events-container div {
         width: 185px; 
     }
 
@@ -1294,7 +1285,6 @@ footer {
     }
 
     /* Footer */
-    
     .logo, .logo-2 {
         width: 60px;
         height: 60px;
@@ -1380,7 +1370,7 @@ footer {
 
     /* Board */
     #board-container {
-        width: 360px;
+        width: 340px;
         height: 300px;
     }
 
@@ -1390,13 +1380,13 @@ footer {
     }
 
     .img-menu {
-        width: 350px;
+        width: 330px;
         border: 5px solid black;
     }
 
     /* Location & Events */
     #location-board-message {
-        font-size: 300%;
+        font-size: 275%;
     }
 
     #location-banner, #events-banner {
@@ -1434,7 +1424,7 @@ footer {
         padding-bottom: 20px;
     }
 
-    #events-container span {
+    #events-container div {
         width: 310px;
     }
 
@@ -1467,7 +1457,7 @@ footer {
 
     /* Board */
     #board-container {
-        width: 320px;
+        width: 300px;
         height: 240px;
     }
 
@@ -1481,45 +1471,44 @@ footer {
     }
 
     .img-menu {
-        width: 310px;
+        width: 280px;
     }
 
     /* Location & Events */
     #location-board-message {
-        font-size: 250%;
+        font-size: 210%;
     }
 
     #location-banner, #events-banner {
-        width: 320px;
+        width: 303px;
+        font-size: 210%;
     }
     
     #location-container {
-        width: 320px;
+        width: 303px;
     }
 
     #location-description-container {
-        width: 290px;
+        width: 293px;
         height: 200px;
     }
 
     #location-map-container {
-        width: 290px;
+        width: 293px;
         height: 230px;
     }
 
     #location-map-container iframe {
-        width: 286px;
+        width: 289px;
         height: 227px;
     }
 
     #events-container {
-        width: 320px;
-        padding-top: 0;
-        padding-bottom: 20px;
+        width: 303px;
     }
 
-    #events-container span {
-        width: 270px;
+    #events-container div {
+        width: 221px;
     }
 
     /* Footer */
