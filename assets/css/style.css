@@ -276,7 +276,7 @@
 
 /* Board */
 #board-container {
-    background: url(../images/chalkboard.jpg) no-repeat center center / 100% 100%;
+    background: url(../images/chalkboard.webp) no-repeat center center / 100% 100%;
     width: 600px;
     height: 360px;
     margin: 140px auto;
