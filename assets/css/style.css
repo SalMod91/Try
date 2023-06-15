@@ -167,7 +167,7 @@
 /* Pseudo-Child to make the background opaque without affecting the h1 */
 #board-background::before {    
     content: "";
-    background: url(../images/chalkboard-hero.jpg);
+    background: url(../images/chalkboard-hero.webp);
     opacity: 0.8;
     position: absolute;
     top: 0px;
