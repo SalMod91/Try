@@ -149,7 +149,7 @@
     margin: 140px auto 0;
     display: flex;
     justify-content: center;
-    background: url(../images/foodtruck.jpg) no-repeat center center / cover;
+    background: url(../images/foodtruck.webp) no-repeat center center / cover;
     border: 10px solid black;
 }
 
@@ -899,15 +899,15 @@ footer {
     }
 
     .container-item-img {
-        width: 48%;
+        width: 50%;
     }
 
     .container-item-description {
-        width: 52%;
+        width: 50%;
     }
 
     .item-img-left, .item-img-right {
-        width: 447px;
+        width: 460px;
         height: 430px;
     }
 
@@ -1018,7 +1018,7 @@ footer {
     .item-img-left, .item-img-right {
         margin: 30px auto;
         width: 575px;
-        height: 400px;
+        height: 470px;
     }
 
     .container-item-description {
