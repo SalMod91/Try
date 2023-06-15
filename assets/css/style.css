@@ -9,7 +9,7 @@
 
 /* Body Background */
 #background {
-    background: rgb(223,206,188) url(../images/cutting-board-salad.jpg) no-repeat center center / cover fixed;
+    background: rgb(223,206,188) url(../images/cutting-board-salad-1.webp) no-repeat center center / cover fixed;
 }
 
 /* Header, logo, big and small menu */
@@ -285,7 +285,7 @@
 
 /* Black Frame */
 .frame-board {
-    background: url(../images/black-frame.png) no-repeat center center / 100% 100%;
+    background: url(../images/black-frame.webp) no-repeat center center / 100% 100%;
     width: 100%;
     display: flex;
     align-items: center;
