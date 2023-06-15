@@ -12,7 +12,7 @@
     <title>At Lujain's Foodtruck</title>
 </head>
 
-<body id="home-background">
+<body id="background">
 
     <!-- Container of the logo and navigation links that sticks to the top -->
     <header id="header">
@@ -77,112 +77,148 @@
         </nav>
     </header>
 
-        <!-- Concept & Story Board -->
+    <!-- Concept & Story Board -->
+    <section>
+        <div id="board-container">
+            <div class="frame-board">
+                <h1 id="about-me-board-message">Concept & Story</h1>
+            </div>
+        </div>
+    </section>
+        
+    <main>
         <section>
-            <div id="board-container">
-                <div class="frame-board">
-                    <h1 id="about-me-board-message">Concept & Story</h1>
+            <!-- Concept Banner used to give a title to the content -->
+            <div id="concept-banner">
+                <h2>Concept</h2>
+            </div>
+
+            <!-- Concept container-->
+            <div id="concept-container">
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Everything Home Cooked</h3>
+                        <p>My beef, chicken, vegetables, and many other ingredients are all prepared by me in my home,<br> you can enjoy the typical Sirian cuisine</p>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/home-cooking.jpg" alt="Image showing a woman cooking at home" class="concept-image">
+                    </div>
+                </div>
+
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Meat from local butcher</h3>
+                        <p>Be it chicken meat, beef or pork:<br> all meat products come from <br> <span class="text-shadow">Fictional Butcher Name</span></p>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/meat-grind.jpeg" alt="Image showing minced meat" class="concept-image">
+                    </div>
+                </div>
+
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Small menu<br>=<br>Fresh Ingredients!</h3>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/small-fresh.jpg" alt="Image showing a Gnome in the snow" class="concept-image">
+                    </div>
+                </div>
+
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Sauces</h3>
+                        <p>I only use sauces made by me</p>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/sauce.jpg" alt="Image showing different sauces in cups on a table" class="concept-image">
+                    </div>
+                </div>
+
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Bread</h3>
+                        <p>All bakery products come from the local bakery <br> <span class="text-shadow">Fictional Bakery Name</span></p>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/loaf-bread.jpg" alt="Image showing 2 loaves of bread" class="concept-image">
+                    </div>
+                </div>
+
+                <!-- Flex container used to reverse the row order of every second element starting from the first -->
+                <div class="concept-flex">
+                    <!-- Container for the description -->
+                    <div class="concept-text">
+                        <h3>Time makes everything better</h3>
+                        <p>That's why i work according to the "slow cooking" principle</p>
+                    </div>
+                    <!-- Container for the image -->
+                    <div class="concept-image-container">
+                        <img src="assets/images/happy-bread.jpg" alt="Image showing toasted bread" class="concept-image">
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Container for the Eco Content -->
+            <div id="eco-container">
+                <!-- Container for the description -->
+                <div id="eco-text">
+                    <h3>Protect the environment</h3>
+                        <ul>
+                            <li><span class="text-shadow">100%</span> climate neutral packaging for my products</li>
+                            <li><span class="text-shadow">100%</span> compensation of CO2 emissions</li>
+                            <li><span class="text-shadow">100%</span> good conscience for me and my customers</li>
+                        </ul>
+                </div>
+                <!-- Container for the image -->
+                <div id="eco-image-container">
+                    <img src="assets/images/eco-logo.jpg" alt="Image depicting biodegradable logo" id="eco-image">
+                </div>
+            </div>
+
+            <!-- Story Banner used to give a title to the content -->
+            <div id="story-banner">
+                <h2>Story</h2>
+            </div>
+
+            <!-- Story container -->
+            <div id="story-container">
+                <!-- Container for the description -->
+                <div id="story-text">
+                    <p>Lujain is a dentist and a researcher who has a great passion for cooking. After migrating to Switzerland and realizing that cooking is her love language, the idea of this food truck began. It is all about sharing the food she makes and watching people enjoying it. Brewing her grandmother recipes with spices and flavors from all over the world, she is creating the simplest yet most delicious bites. Fresh bread and ingredients are one of her secrets. If want to know more, just come by and she will spell out all her recipes for you.</p>
+                </div>
+                <!-- Container for the image -->
+                <div id="story-image-container">
+                    <img src="assets/images/lulu-story.jpg" alt="Image depicting Lujain, the owner of the foodtruck" id="story-image">
                 </div>
             </div>
         </section>
-        <main>
-            <section>
-                <!-- Concept Banner-->
-                <div id="concept-banner">
-                    <h2>Concept</h2>
-                </div>
-
-                <!-- Concept content -->
-                <div id="concept-container">
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Everything Home Cooked</h3>
-                            <p>My beef, chicken, vegetables, and many other ingredients are all prepared by me in my home,<br> you can enjoy the typical Sirian cuisine</p>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/home-cooking.jpg" alt="Image showing a woman cooking at home" class="concept-image"></div>
-                    </div>
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Meat from local butcher</h3>
-                            <p>Be it chicken meat, beef or pork:<br> all meat products come from <br> <span class="text-shadow">Fictional Butcher Name</span></p>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/meat-grind.jpeg" alt="Image showing minced meat" class="concept-image"></div>
-                    </div>
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Small menu<br>=<br>Fresh Ingredients!</h3>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/small-fresh.jpg" alt="Image showing a Gnome in the snow" class="concept-image"></div>
-                    </div>
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Sauces</h3>
-                            <p>I only use sauces made by me</p>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/sauce.jpg" alt="Image showing different sauces in cups on a table" class="concept-image"></div>
-                    </div>
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Bread</h3>
-                            <p>All bakery products come from the local bakery <br> <span class="text-shadow">Fictional Bakery Name</span></p>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/loaf-bread.jpg" alt="Image showing 2 loaves of bread" class="concept-image"></div>
-                    </div>
-
-                    <div class="concept-flex">
-                        <div class="concept-text">
-                            <h3>Time makes everything better</h3>
-                            <p>That's why i work according to the "slow cooking" principle</p>
-                        </div>
-                        <div class="concept-image-container"><img src="assets/images/happy-bread.jpg" alt="Image showing toasted bread" class="concept-image"></div>
-                    </div>
-                </div>
-                
-                <div id="eco-container">
-                    <div id="eco-text">
-                        <h3>Protect the environment</h3>
-                            <ul>
-                                <li><span class="text-shadow">100%</span> climate neutral packaging for my products</li>
-                                <li><span class="text-shadow">100%</span> compensation of CO2 emissions</li>
-                                <li><span class="text-shadow">100%</span> good conscience for me and my customers</li>
-                            </ul>
-                    </div>
-                    <div id="eco-image-container">
-                        <img src="assets/images/eco-logo.jpg" alt="Image depicting biodegradable logo" id="eco-image">
-                    </div>
-                </div>
-
-                <!-- Story Banner-->
-                <div id="story-banner">
-                    <h2>Story</h2>
-                </div>
-
-                <!-- Story content -->
-                <div id="story-container">
-                    <div id="story-text">Lujain is a dentist and a researcher who has a great passion for cooking. After migrating to Switzerland and realizing that cooking is her love language, the idea of this food truck began. 
-                        It is all about sharing the food she makes and watching people enjoying it. Brewing her grandmother recipes with spices and flavors from all over the world, she is creating the simplest yet most delicious bites. Fresh bread and ingredients are one of her secrets. If want to know more, just come by and she will spell out all her recipes for you.
-                    </div>
-                    <div id="story-image-container">
-                        <img src="assets/images/lulu-story.jpg" alt="Image depicting Lujain, the owner of the foodtruck" id="story-image">
-                    </div>
-                </div>
-            </section>
-        </main>
+    </main>
 
     <!-- Footer -->
     <!-- Footer Flex Container -->
     <footer>
         <!-- First row for the Logo -->
         <div class="footer-row-container">
-            <!-- Flex Container for the logo -->
             <a href="index.html" class="footer-logo-container">
-            <img src="assets/images/sandwich-logo.png" alt="Logo of the food truck depicting a loaf of bread" class="logo">
-            <img src="assets/images/sandwich-logo-2.png" alt="Logo of the food truck depicting a yellow loaf of bread" class="logo-2">
+                <!-- White logo underneath the transparent colored one -->
+                <img src="assets/images/sandwich-logo.png" alt="Logo of the food truck depicting a loaf of bread" class="logo">
+                <!-- Colored logo with 0% opacity on top the white logo -->
+                <img src="assets/images/sandwich-logo-2.png" alt="Logo of the food truck depicting a yellow loaf of bread" class="logo-2">
             </a>
         </div>
         <!-- Second row for Contact Information and Flex Container-->
