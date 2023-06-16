@@ -24,7 +24,7 @@
     z-index: 8;
 }
 
-/* White logo with foodtruck's name */
+/* White logo with foodtruck's name below the colored one */
 .logo-with-name {
     width: 205px;
     height: 86px;
@@ -45,12 +45,13 @@
     opacity: 0%;
 }
 
+/* Changes opacity to fully visible when hovered on giving the illusion of the icon slowly becoming colored */
 .logo-with-name-2:hover {
     opacity: 1.0;
     transition: all 0.5s;
 }
 
-/* Navigation Menu visible above XXX width */
+/* Navigation Menu visible above 1024px width */
 #big-menu {
     position: fixed;
     top: 0;
@@ -74,13 +75,13 @@
     text-decoration: none;
 }
 
-/* Underline on hover of links */
+/* Underline on hover of links in the header */
 #big-menu a:hover {
     border-bottom: 1px solid #FFB018;
     color: #FFB018;
 }
 
-/* Underline to showcase active page */
+/* Underline to showcase active page inspired by Love Running Project */
 .active-page {
     border-bottom: 1px solid white;
 }
@@ -90,7 +91,7 @@
     display: none;
 }
 
-/* Hamburger Icon visible only below XXX width, used to check the Checkbox */
+/* Hamburger Icon visible only below 1025px width, used as a label to check the Checkbox */
 #small-menu {
     position: fixed;
     top: 20px;
@@ -108,7 +109,7 @@
     z-index: 5;
 }
 
-/* Navigation Menu hidden out of frame */
+/* Navigation Menu hidden out of the visible screen */
 #hidden-menu {
     position: fixed;
     top: 0;
@@ -125,6 +126,7 @@
     font-family: Merriweather, sans-serif;
 }
 
+/* When the checkbox, in the form of a hamburger icon, is check the hidden menu will slide in the screen from the right side */
 #checkbox:checked ~ #hidden-menu {
     right: -70px;
 }
@@ -134,7 +136,7 @@
     color: white;
 }
 
-/* Underline on hover of links*/
+/* Underline on hover of the links in the hidden menu */
 #hidden-menu a:hover {
     border-bottom: 1px solid #FFB018;
     color: #FFB018;
@@ -205,16 +207,20 @@
     display: flex;
 }
 
+/* Reverses the flex direction of every second element starting from the first  */
 .container-item:nth-child(2n+2) {
     flex-direction: row-reverse;
 }
 
+/* Flex container for the image */
 .container-item-img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 70%
 }
+
+/* Attributes for the left image with a left margin and without a right margin, i later realized i could have achieved the same result by applying justify-content: center and align items: center to the parent of the image instead of using the margin but it was my first code ever written and i felt nostalgic */
 .item-img-left {
     width: 445px;
     height: 370px;
@@ -222,6 +228,7 @@
     border: 10px solid black;
 }
 
+/* Attributes for the right image with a right margin and without a left margin */
 .item-img-right {
     width: 445px;
     height: 370px;
@@ -229,6 +236,7 @@
     border: 10px solid black;
 }
 
+/* Flex Container for the description */
 .container-item-description {
     text-align: center;
     justify-content: space-between;
@@ -252,6 +260,7 @@
     padding: 10px;
 }
 
+/* An <a> element with css rules applied to look like a <button> element */
 .description-button {
     background-color: #FFB018;
     color: #000000;
@@ -266,6 +275,7 @@
     border-radius: 10px;
 }
 
+/* Hover function for the button that reverses the colors */
 .description-button:hover {
     background-color: #000000;
     color: #FFB018;
@@ -274,7 +284,7 @@
 
 /* Chalkboard for all pages */
 
-/* Board */
+/* Black Chalkboard used to introduce/show wich page the User finds itself in the moment */
 #board-container {
     background: url(../images/chalkboard.webp) no-repeat center center / 100% 100%;
     width: 600px;
@@ -283,7 +293,7 @@
     display: flex;
 }
 
-/* Black Frame */
+/* Black Wooden Frame */
 .frame-board {
     background: url(../images/black-frame.webp) no-repeat center center / 100% 100%;
     width: 100%;
@@ -294,12 +304,15 @@
 }
 
 /* Menu Page */
+
+/* Chalkboard message identifying the current page */
 #menu-board-message {
     font-size: 600%;
     font-family: "Fredericka the great", sans-serif;
     color: whitesmoke;
 }
 
+/* Used to identify the product */
 .menu-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -319,6 +332,7 @@
     text-decoration-thickness: 3px;
 }
 
+/* Flex container rules for the menu content */
 .menu-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -329,6 +343,7 @@
     justify-content: center;
 }
 
+/* Flex container for the images in the menu */
 .menu-image-container {
     width: 60%;
     display: flex;
@@ -336,11 +351,13 @@
     justify-content: center;
 }
 
+/* The image child element of the image container */
 .img-menu {
     width: 96.5%;
     border: 10px solid black;
 }
 
+/* Flex container used for the description of the ingredients */
 .menu-text-container {
     display: flex;
     width: 40%;
@@ -350,18 +367,21 @@
     text-align: center;
 }
 
+/* Child element of the description container */
 .menu-text-container p {
     font-size: 170%;
     font-family: "Indie Flower", sans-serif;
 }
 
+/* Reverses the order of every fourth element starting from the second */
 .menu-container:nth-child(4n+2) {
     flex-direction: row-reverse;
 }
  
 /* Location & Events Page */
 
-/* Location */
+/* Rules related to the location */
+/* Chalkboard message identifying the current page */
 #location-board-message {
     text-align: center;
     font-size: 600%;
@@ -369,6 +389,7 @@
     color: whitesmoke;
 }
 
+/* Used to identify that the following section of the page is related only to the location */
 #location-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 1422px;
@@ -384,6 +405,7 @@
     text-decoration: underline;
 }
 
+/* Flex container for the location section */
 #location-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1422px;
@@ -394,6 +416,7 @@
     justify-content: center;
 }
 
+/* Container for the description of the location */
 #location-description-container {
     background-color: #FFB018;
     width: 392px;
@@ -407,12 +430,14 @@
     font-weight: bold;
 }
 
+/* Child of the location-description container */
 #location-description-container p {
     padding: 20px;
     font-family: Merriweather, sans-serif;
     font-size: 130%;
 }
 
+/* Flex container for the embedded google maps link */
 #location-map-container {
     width: 968px;
     height: 600px;
@@ -423,6 +448,7 @@
     align-items: center;
 }
 
+/* Rules for the embedded google maps link */
 #location-map-container iframe {
     width: 964px;
     height: 597px;
@@ -431,7 +457,9 @@
     left: 0px;
 }
 
-/* Events */
+/* Rules related to Events */
+
+/* Used to identify that the following section of the page is related only to the events */
 #events-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 1422px;
@@ -447,6 +475,7 @@
     text-decoration: underline;
 }
 
+/* Flex container for the events descriptions */
 #events-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1422px;
@@ -459,6 +488,7 @@
     flex-wrap: wrap;
 }
 
+/* Divs sharing the events container */
 #events-container div {
     width: 315px;
     text-align: center;
@@ -482,7 +512,9 @@
     line-height: 1.5;
 }
 
-/* Concept & Story Page */
+/* Rules related to the Concept & Story Page */
+
+/* Chalkboard message identifying the current page */
 #about-me-board-message {
     text-align: center;
     font-size: 600%;
@@ -490,7 +522,9 @@
     color: whitesmoke;
 }
 
-/* Concept */
+/* Rules for the concept section */
+
+/* Used to identify that the following section of the page is related only to the concept */
 #concept-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -506,6 +540,7 @@
     text-decoration: underline;
 }
 
+/* Container used for the transparent white background  */
 #concept-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -514,11 +549,13 @@
     padding: 30px 0;
 }
 
+/* Flex container for the concept, used separately to be able to reverse the order of the flex-direction */
 .concept-flex {
     display:flex;
     padding: 20px;
 }
 
+/* FLex container for the descriptions of the concept */
 .concept-text {
     width: 50%;
     text-align: center;
@@ -539,6 +576,7 @@
     padding: 0 20px;
 }
 
+/* Flex container for the images of the concept */
 .concept-image-container {
     width: 50%;
     display: flex;
@@ -546,17 +584,19 @@
     align-items: center;
 }
 
+/* Image inside the container */
 .concept-image {
     width: 475px;
     height: 317px;
     border: 10px black solid;
 }
 
+/* Reverses the flex-direction of every second child after the first */
 #concept-container .concept-flex:nth-child(2n+1) {
     flex-direction: row-reverse;
 }
 
-/* Eco-Friendly */
+/* Flex container created seperately in order to highlight the importance of the subject of eco-friendly materials */
 #eco-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -564,6 +604,7 @@
     display: flex;
 }
 
+/* Description container for eco */
 #eco-text {
     width: 50%;
     text-align: center;
@@ -591,6 +632,7 @@
     text-align: left;
 }
 
+/* Image container for eco*/
 #eco-image-container {
     width: 50%;
     display: flex;
@@ -605,7 +647,9 @@
     border: 10px black solid;
 }
 
-/* Story */
+/* Rules related to the story */
+
+/* Used to identify that the following section of the page is related only to the Story */
 #story-banner {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -622,6 +666,7 @@
     text-decoration: underline;
 }
 
+/* Flex container for the story */
 #story-container {
     background: rgba(255, 255, 255, 0.6);
     width: 1152px;
@@ -632,6 +677,7 @@
     padding-bottom: 30px;
 }
 
+/* Flex container for the description of the story */
 #story-text {
     width: 50%;
     text-align: center;
@@ -644,6 +690,7 @@
     padding: 20px 40px;
 }
 
+/* Flex container for the image of the owner of the Foodtruck */
 #story-image-container {
     width: 50%;
     display: flex;
@@ -658,7 +705,9 @@
     border: 10px black solid;
 }
 
-/* Contact Page */ 
+/* Rules related to the contact page */ 
+
+/* Chalkboard message identifying the current page */
 #contact-board-message {
     text-align: center;
     font-size: 600%;
@@ -710,6 +759,7 @@
     margin-bottom: 15px;
 }
 
+/* Send button */
 .form-submit {
     font-size: 250%;
     font-family: "Fredericka the great", sans-serif;
@@ -741,6 +791,7 @@
 
 /* Footer */
 
+/* Used to make the footer section a flex container and giving it a black color to highlight it */
 footer {
     background-color:rgb(33, 33, 35);
     display: flex;
@@ -750,6 +801,7 @@ footer {
     height: 80px;
 }
 
+/* Used rows instead of divs in order to experiment something new */
 .footer-row-container {
     display: flex;
     flex-grow: 1;
@@ -759,12 +811,14 @@ footer {
     height: 100%;
 }
 
+/* Used as a flex container for the logo */
 .footer-logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Used the same concept of the logo in the header, this one doesn't have the name in it */
 .logo, .logo-2 {
     width: 75px;
     height: 75px;
@@ -780,6 +834,7 @@ footer {
     transition: all 0.5s;
 }
 
+/* Flex container for the middle row, used for displaying the e-mail and the phone number of the owner/foodtruck */
 .contact-row {
     display: flex;
     flex-direction: column;
@@ -798,6 +853,7 @@ footer {
     margin-right: 15px;
 }
 
+/* Flex container for the right row with social links */
 .social-links-row {
     display: flex;
     justify-content: center;
@@ -810,6 +866,7 @@ footer {
     margin: 0 15px;
 }
 
+/* The awesome fonts icon turn the same color of the logos and links when hovered on */
 .social-links-row i:hover {
     color: #FFB018;
     transition: all 0.3s;
