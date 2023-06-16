@@ -14,7 +14,7 @@
 
 /* Header, logo, big and small menu */
 
-/* Fixed position dark bar containing logo and big/small menu */
+/* Fixed position black background bar containing logo and big/small menu */
 #header {
     background-color: rgb(33, 33, 35);
     width: 100%;
@@ -55,7 +55,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: Merriweather;
+    font-family: Merriweather, sans-serif;
     list-style-type: none;
     float: right;
     line-height: 50px;
@@ -122,7 +122,7 @@
     padding: 70px 10px;
     font-size: 220%;
     line-height: 2.3;
-    font-family: Merriweather;
+    font-family: Merriweather, sans-serif;
 }
 
 #checkbox:checked ~ #hidden-menu {
@@ -179,7 +179,7 @@
 /* Heading inside the opaque background */
 #board-background h1 {
     color: antiquewhite;
-    font-family: 'Fredericka the Great';
+    font-family: 'Fredericka the Great', sans-serif;
     font-size: 460%;
     white-space: nowrap;
     text-align: center;
@@ -239,14 +239,14 @@
 }
 
 .container-item-description h2 {
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     text-decoration: underline;
     font-size: 250%;
     margin-top: 25px;
 }
 
 .container-item-description p {
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     font-size: 200%;
     margin-bottom: 30px;
     padding: 10px;
@@ -257,7 +257,7 @@
     color: #000000;
     text-decoration: none;
     font-size: 230%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     width: 180px;
     margin-bottom: 25px;
     cursor: pointer;
@@ -296,7 +296,7 @@
 /* Menu Page */
 #menu-board-message {
     font-size: 600%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     color: whitesmoke;
 }
 
@@ -308,7 +308,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     text-align: center; 
     text-transform: uppercase;
 }
@@ -352,7 +352,7 @@
 
 .menu-text-container p {
     font-size: 170%;
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
 }
 
 .menu-container:nth-child(4n+2) {
@@ -365,7 +365,7 @@
 #location-board-message {
     text-align: center;
     font-size: 600%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     color: whitesmoke;
 }
 
@@ -377,7 +377,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
@@ -409,7 +409,7 @@
 
 #location-description-container p {
     padding: 20px;
-    font-family: merriweather;
+    font-family: Merriweather, sans-serif;
     font-size: 130%;
 }
 
@@ -440,7 +440,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
@@ -464,7 +464,7 @@
     text-align: center;
     border: 5px black solid;
     display: inline-block;
-    font-family: merriweather;
+    font-family: Merriweather, sans-serif;
     padding: 10px;
 }
 
@@ -486,7 +486,7 @@
 #about-me-board-message {
     text-align: center;
     font-size: 600%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     color: whitesmoke;
 }
 
@@ -499,7 +499,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
@@ -528,13 +528,13 @@
 }
 
 .concept-text>h3 {
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     text-shadow: 2px 1px 3px black;
     font-size: 200%;
 }
 
 .concept-text>p {
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     font-size: 145%;
     padding: 0 20px;
 }
@@ -574,7 +574,7 @@
 }
 
 #eco-text>h3 {
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     text-shadow: 2px 1px 3px black;
     font-size: 300%;
     text-decoration: underline;
@@ -585,7 +585,7 @@
 }
 
 #eco-text li{
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     font-size: 145%;
     padding-top: 6.5%;
     text-align: left;
@@ -615,7 +615,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
@@ -638,7 +638,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Indie Flower';
+    font-family: 'Indie Flower', sans-serif;
     font-size: 150%;
     letter-spacing: 0px;
     padding: 20px 40px;
@@ -662,7 +662,7 @@
 #contact-board-message {
     text-align: center;
     font-size: 600%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     color: whitesmoke;
 }
 
@@ -675,7 +675,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     font-size: 300%;
     text-align: center; 
     text-transform: uppercase;
@@ -690,7 +690,7 @@
     overflow: auto;
     padding-bottom: 30px;
     text-align: center;
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
     font-size: 130%;
 }
 
@@ -712,7 +712,7 @@
 
 .form-submit {
     font-size: 250%;
-    font-family: "Fredericka the great";
+    font-family: "Fredericka the great", sans-serif;
     background-color: #FFB018;
     color: #000000;
     border-radius: 5px;
