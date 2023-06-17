@@ -329,7 +329,7 @@
 .menu-banner h2 {
     font-size: 220%;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 5px;
 }
 
 /* Flex container rules for the menu content */
