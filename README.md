@@ -6,7 +6,7 @@ At Lujain's Footruck was born from Lujain's love of cooking and sharing food wit
 
 The goal of the website is to help the new audience to find out the concept of the Footruck, Lujain herself and why she started this project, what to expect in the Menu and most likely the biggest reason for visiting the website for new and old audience will be to provide informations about the location and events.
 
-![Responsive Screenshot](//assets/images/readme-images/responsive-screenshot.PNG)
+![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.PNG)
 
 This projects site is live and can be viewed here - https://salmod91.github.io/project-1-at-lujain/
 
