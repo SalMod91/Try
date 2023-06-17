@@ -1,18 +1,48 @@
-# At Lujain's
+# Content Table
+- [Introduction] (#introduction)
+- [UX] (#ux)
+    [Site Purpose] (#site-purpose)
+- [Features] (#features)
+    - [Existing Features] (#existing-features)
+## Introduction
 
 At Lujain's is a fictional foodtruck passion project of, as the name of the foodtruck suggests, Lujain, wich you can find consistently in the same location during the weekends and at specific events. 
 
 At Lujain's Footruck was born from Lujain's love of cooking and sharing food with everyone, as such it's target is an audience of all ages, especially people down on their luck thanks to the affordable prices wich aim not to make a profit but rather only to cover its production costs.
 
-The goal of the website is to help the new audience to find out the concept of the Footruck, Lujain herself and why she started this project, what to expect in the Menu and most likely the biggest reason for visiting the website for new and old audience will be to provide informations about the location and events.
+The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu and most likely the biggest reason for visiting the website for new and old users will be to provide informations about the location and events.
 
 ![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.PNG)
 
-This projects site is live and can be viewed here - https://salmod91.github.io/project-1-at-lujain/
+## UX
+
+### Site Purpose:
+
+To give the users a way to find information about the location, the menu and the foodtruck itself.
+
+### Site Goal:
+To regularly update the users about new locations, events and menu changes.
+To bring new user's attention to the social media platforms used to inform the audience about opening times, availability, menu and location.
+
+### Audience:
+Everyone who wants to enjoy local, affordable and homecooked food.
+
+### Communication:
+The website is structured in a way that once the user lands on it, it won't be overwhelmed by information. With one scroll the user will find a summary of all pages and possible reasons of the visit, structured tightly to not let the eyes wander aimlessly. 
+
+### Current User Goals:
+- To see regular updates of the locations, of the events and of the menu.
+- To give the user a way to subscribe or get in contact with the owner of the foodtruck.
+
+### New user Goals:
+- To navigate the site with ease and clearly understand the information provided.
+- To inform new users about the location, events and menu.
+- To inform new users about the concept of the foodtruck.
+- To introduce new users to the socia media page.
+
+
 
 ## Features 
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 ### Existing Features
 
@@ -51,7 +81,7 @@ In this section, you should go over the different parts of your project, and des
 
 ![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
 
-- __Gallery__
+- ## Gallery
 
   - The gallery will provide the user with supporting images to see what the meet ups look like. 
   - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
