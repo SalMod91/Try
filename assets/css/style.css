@@ -789,6 +789,32 @@
     font-weight: bold;
 }
 
+/* Form-Dump Page */
+
+/* Thank you board message*/
+#thank-you-message {
+    text-align: center;
+    font-size: 600%;
+    font-family: "Fredericka the great", sans-serif;
+    color: whitesmoke;
+}
+
+/* Flex container and text style rules */
+#dump-container {
+    background: rgba(255, 255, 255, 0.6);
+    width: 1152px;
+    height: 300px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    text-align: center;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
 /* Footer */
 
 /* Used to make the footer section a flex container and giving it a black color to highlight it */
@@ -1012,6 +1038,12 @@ footer {
     .contact-banner, .contact-container {
         width: 1007px;
     }
+
+    /* Form-dump */
+
+    #dump-container {
+        width: 950px;
+    }
 }
 
 @media screen and (max-width: 1140px) {
@@ -1187,6 +1219,13 @@ footer {
     /* Contact */
     .contact-banner, .contact-container {
         width: 750px;
+    }
+
+    /* Form-Dump */
+
+    #dump-container {
+        width: 700px;
+        font-size: 150%;
     }
 }
 
@@ -1399,6 +1438,19 @@ footer {
         font-size: 250%;
         margin: 4px 8px;
     }
+
+    /* Form-Dump */
+
+    #dump-container {
+        width: 100%;
+        padding: 0;
+        font-size: 150%;
+        height: 400px;
+    }
+    
+    #dump-container p, #dump-container h2 {
+        padding: 20px;
+    }
 }
 
 /* Media screen only for footer */
@@ -1573,6 +1625,12 @@ footer {
     .required {
         margin-right: 240px;
     }
+
+    /* Form-Dump */
+
+    #dump-container {
+        font-size: 120%;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1665,6 +1723,12 @@ footer {
 
     .required {
         margin-right: 190px;
+    }
+
+    /* Form Dump */
+
+    #thank-you-message {
+        font-size: 500%;
     }
 
     /* Footer */
