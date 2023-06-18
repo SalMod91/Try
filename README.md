@@ -1,16 +1,23 @@
 # Content Table
-- [Introduction] (#introduction)
-- [UX] (#ux)
-    [Site Purpose] (#site-purpose)
-- [Features] (#features)
-    - [Existing Features] (#existing-features)
+- [Introduction](#introduction)
+- [UX](#ux)
+    - [Site Purpose](#site-purpose)
+    - [Site Goal](#site-goal)
+    - [Audience](#audience)
+    - [Communication](#communication)
+    - [Current User Goals](#current-user-goals)
+    - [New User Goals](#new-user-goals)
+- [Design](#design)
+  - [Color Scheme](#color-scheme)
+- [Features](#features)
+    - [Navigation Bar](#navigation-bar)
 ## Introduction
 
 At Lujain's is a fictional foodtruck passion project of, as the name of the foodtruck suggests, Lujain, wich you can find consistently in the same location during the weekends and at specific events. 
 
-At Lujain's Footruck was born from Lujain's love of cooking and sharing food with everyone, as such it's target is an audience of all ages, especially people down on their luck thanks to the affordable prices wich aim not to make a profit but rather only to cover its production costs.
+At Lujain's Footruck was born from Lujain's love of cooking and sharing food with everyone, as such it's target is an audience of all ages, especially people down on their luck thanks to the affordable prices wich aim not to make a profit but rather to cover its production costs.
 
-The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu and most likely the biggest reason for visiting the website for new and old users will be to provide informations about the location and events.
+The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu , introduce them to the social media page and the biggest reason for visiting the website for new and old users will be to provide informations about the location and events. 
 
 ![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.PNG)
 
@@ -40,13 +47,55 @@ The website is structured in a way that once the user lands on it, it won't be o
 - To inform new users about the concept of the foodtruck.
 - To introduce new users to the socia media page.
 
+## Design
 
+### Color Scheme:
+- Text Color Selection<br>
+The decision to utilize black color for the text was carefully considered to ensure optimal readability and visual contrast against the background.
+Choosing a high-contrast color combination, such as black text on a light background, is also a recommended practice for improving accessibility. It ensures that users with visual impairments or color vision deficiencies can easily perceive and comprehend the text. By prioritizing accessibility in the color selection, the project aims to provide an inclusive experience for all users.
+
+- Header Color Selection <br>
+The header serves as a fixed element that accompanies the user's scrolling throughout the website, to emphasize its separation from the main content and to evoke a sense of exclusivity, the "Black Russian" color was chosen. This color provides a stark contrast against the vibrant background.
+This design approach ensures that the header remains noticeable and accessible at all times.
+
+- Heading Color Selection <br>
+By employing the "Smokeywhite" color for the text on black chalkboards, the design captures the feeling of a relaxed atmosphere associated with handwritten chalkboard menus. It enhances the overall theme of the food truck website, conveying a sense of homemade goodness and approachability to visitors.
+
+- Links and logos <br>
+The color #ffb018, which also happens to be the color of the logo, has been carefully chosen to create engaging hover effects for both links and the logo itself. When users hover over links or the logo, the color transitions from the default state to #ffb018 providing visual feedback indicating interactivity.
+
+![Colour Palette](/assets/images/readme-images/colour-palette.PNG)
+
+### Typography:
+- Fredericka the Great <br>
+The choice of the "Fredericka the Great" font for headings was motivated by the desire to emulate the appearance of chalkboard handwriting. This font's characteristics with its uneven strokes create an authentic and chalk-like texture evoking a sense of informality, capturing the charm associated with chalkboard writings.
+
+- Merriweather <br>
+For elements such as headers, footers and events, the "Merriweather" font was selected to establish a more professional and polished tone. This font, compared to other fonts used for the website exudes professionalism and ensures that these important elements of the website are presented in a refined manner.
+
+- Indie Flower <br>
+The "Indie Flower" font was used to instill a sense of familiarity and approachability. This was used when trying to create a more intimate and cozy atmosphere, reinforcing the concept of homecooked food and a personal connection with the audience. 
+
+By employing these fonts strategically the design achieves a balance between the playful and professional atmosphere.
+
+### Imagery:
+The selection of images for the website involved a combination of royalty-free images and a few notable exceptions that warrant special mention:
+
+- Hero Image <br>
+The hero image mainly features a food truck wich was sourced from a royalty-free image provider. While the image captures the essence of a food truck it is important to note that the selection was limited by the availability of royalty-free options. As a result, the chosen image might not fully align with the exact vision or specific details of the project. Despite the limitations the food truck image serves as a visual representation of a mobile kitchen and the idea of serving delicious homecooked food on the go.
+
+- Black Hero Image/Chalkboard frame <br>
+A black frame was skillfully created by VFX artist and good friend Tony Manzi. The decision to use a black frame was driven by the desire to establish a strong contrast with the background wich features a light-colored wooden cutting board. The black frame effectively creates a visually striking separation that draws the viewer's attention.
+
+- Logo <br>
+The logo for the foodtruck featuring a loaf of bread has also been skillfully designed by Tony Manzi. The choice of a loaf of bread aligns with the concept of the foodtruck offering sandwiches.
+
+- Menu Pictures <br>
+Due to the specific theme of sandwiches on a cutting board with a black background it was challenging to find royalty-free pictures. With my life partner's and owner of the fictional foodtruck, Lujain's suggestion i explored Canvas AI wich was able to generate menu pictures that met my specific requirements.
 
 ## Features 
 
-### Existing Features
-
-- __Navigation Bar__
+### Navigation Bar:
 
   - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
