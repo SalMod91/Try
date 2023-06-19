@@ -1045,6 +1045,7 @@ footer {
     }
 }
 
+/* This media querie is for the header only */
 @media screen and (max-width: 1140px) {
     
     /* Header */
@@ -1228,6 +1229,7 @@ footer {
     }
 }
 
+/* From this media querie on there is no margin between the containers and the borders of the website except for location&events*/
 @media screen and (max-width: 768px) {
     
     /* Header */
@@ -1452,7 +1454,7 @@ footer {
     }
 }
 
-/* Media screen only for footer */
+/* Media querie only for footer */
 @media screen and (max-width: 645px) {
 
     /* Footer */

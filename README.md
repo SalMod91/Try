@@ -22,7 +22,7 @@
   - [Footer](#footer)
   - [Future Features](#future-features)
 - [Testing](#testing)
-  - 
+  - [Testing Table](#testing-table)
 
 ## Introduction
 
@@ -75,7 +75,7 @@ This design approach ensures that the header remains noticeable and accessible a
 By employing the "Smokeywhite" color for the text on black chalkboards, the design captures the feeling of a relaxed atmosphere associated with handwritten chalkboard menus. It enhances the overall theme of the food truck website, conveying a sense of homemade goodness and approachability to visitors.
 
 - Links and logos <br>
-The color #ffb018, which also happens to be the color of the logo, has been carefully chosen to create engaging hover effects for both links and the logo itself. When users hover over links or the logo, the color transitions from the default state to #ffb018 providing visual feedback indicating interactivity.
+The color #ffb018, which also happens to be the color of the logo, has been carefully chosen to create engaging hover effects for both links and the logo itself. When users hover over links or the logo, the color transitions from the default state to #ffb018 providing visual feedback indicating interactivity and confirming an action to the user.
 
 ![Colour Palette](/assets/images/readme-images/colour-palette.webp)
 
@@ -89,7 +89,7 @@ For elements such as headers, footers and events, the "Merriweather" font was se
 - Indie Flower <br>
 The "Indie Flower" font was used to instill a sense of familiarity and approachability. This was used when trying to create a more intimate and cozy atmosphere, reinforcing the concept of homecooked food and a personal connection with the audience. 
 
-By employing these fonts strategically the design achieves a balance between the playful and professional atmosphere.
+By employing these fonts strategically the design achieves a balance between the friendly and professional atmosphere.
 
 ### Imagery:
 The selection of images for the website involved a combination of royalty-free images and a few notable exceptions that warrant special mention:
@@ -181,16 +181,16 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
   ![Form-Dump 1 preview](/assets/images/readme-images/form-dump-1-preview.webp)
   ![Fomt-Dump 2 preview](/assets/images/readme-images/form-dump-2-preview.webp)
 
-### Footer
+### Footer:
 
   - The footer section follows the same concept as the header, creating a distinctive and consistent visual experience separating it from the rest of the website. It includes a smaller version of the logo, contact information and relevant social links. 
 
-  - To keep consistency with the header and the rest of the website the social links also feature an interactive design in order to promote a visual feedback to the user.
+  - To keep consistency with the header and the rest of the website the social links also feature an interactive design in order to promote a visual feedback to the user. The social links open the associated social platform in a new tab.
 
   - As with the header also the footer's design is consistent in all pages giving the user a sense of familiarity when navigating the website.
 ![Footer Preview](/assets/images/readme-images/footer-preview.webp)
 
-### Future Features
+### Future Features:
 
 - Multiple scrolling images in the landing page.
 - A gallery.
@@ -198,16 +198,27 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Testing Table:
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+**TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
+----------|----------|----------|----------
+Header - All Pages | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br>(max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool due to missing hardware | Elements look good down to 320px | Works as expected
+Header - All Pages | Primary Nav Bar Buttons and Logo | Each nav element and logo take the user to the correct page, active page underline present, hover function on logo and links | Works as expected
+Header - All Pages | Hidden Nav Bar,<br> Hidden Nav Bar Buttons | The nav bar slides correctly from the side, each nav element and logo take the user to the correct page, active page underline present, hover function on logo and links | Works as expected
+Home Page | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br>(max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool |  Elements look good down to 320px  | Works as expected
+Home Page | Internal Links | Each anchor element takes the user to the correct page, hover function on buttons inverting color | Works as expected
+Menu Page | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br>(max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elements look good down to 320px | Works as expected
+Location&Events Page | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elements look good down to 320px | Works as expected
+Location&Events Page | Embedded Google Map | Ability to interact with it on Chrome, Firefox, Edge and Safari | Works as expected
+Concept&Story Page | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elements look good down to 320px | Works as expected
+Contact Page | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elements look good down to 320px | Works as expected
+Contact Page | Send Button for contact and subscribe form | Redirects the user to the correct page | Works as expected
+Form-Dump Contact | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elemets look good down to 320px | Works as expected
+Form-Dump Subscribe | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elemets look good down to 320px | Works as expected
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### Thought of process:
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
-### Validator Testing 
+### Validator Testing:
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
