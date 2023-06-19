@@ -23,6 +23,8 @@
   - [Future Features](#future-features)
 - [Testing](#testing)
   - [Testing Table](#testing-table)
+  - [Validator Testing](#validator-testing)
+- [Thought Of Process](#thought-of-process)
 
 ## Introduction
 
@@ -216,14 +218,21 @@ Contact Page | Send Button for contact and subscribe form | Redirects the user t
 Form-Dump Contact | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elemets look good down to 320px | Works as expected
 Form-Dump Subscribe | Size down from 1920px, testing down to the minimum width for every viewport breaking point <br> (max-width:1441px, 1281px, 1141px (header only), 1025px, 769px, 646px (footer only), 481px, 361px) to 320px using Dev Tools on Chrome, Firefox and Edge. Safari has been so far tested only on mobile devices without the Dev Tool | Elemets look good down to 320px | Works as expected
 
-### Thought of process:
-
 ### Validator Testing:
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator]
+  - Home Page ![Home Validator](/assets/images/readme-images/home-validator.webp)
+  - Menu Page ![Menu Validator](/assets/images/readme-images/menu-validator.webp)
+  - Location&Events Page ![Location&Events Validator](/assets/images/readme-images/location-events-validator.webp)
+  - Concept&Story Page ![Concept&Story](/assets/images/readme-images/about-me-validator.webp)
+  - Contact Page ![Contact Validator](/assets/images/readme-images/contact-validator.webp)
+  - Form-Dump Contact Page ![Form Dump 1 Validator](/assets/images/readme-images/form-dump-validator.webp)
+  - Form-Dump Subscribe Page ![Form Dump 2 Validator](/assets/images/readme-images/form-dump-2-validator.webp)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official (Jigsaw) validator ![CSS Validator](/assets/images/readme-images/css-validator.webp)
+
+## Thought Of Process
 
 ### Unfixed Bugs
 
