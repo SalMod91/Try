@@ -1,19 +1,29 @@
 # Content Table
 - [Introduction](#introduction)
 - [UX](#ux)
-    - [Site Purpose](#site-purpose)
-    - [Site Goal](#site-goal)
-    - [Audience](#audience)
-    - [Communication](#communication)
-    - [Current User Goals](#current-user-goals)
-    - [New User Goals](#new-user-goals)
+  - [Site Purpose](#site-purpose)
+  - [Site Goal](#site-goal)
+  - [Audience](#audience)
+  - [Communication](#communication)
+  - [Current User Goals](#current-user-goals)
+  - [New User Goals](#new-user-goals)
 - [Design](#design)
-  - [Color Scheme](#color-scheme)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
+- [Color Scheme](#color-scheme)
+- [Typography](#typography)
+- [Imagery](#imagery)
 - [Features](#features)
-    - [Navigation Bar](#navigation-bar)
-    - [Landing page](#landing-page)
+  - [Navigation Bar](#navigation-bar)
+  - [Landing page](#landing-page)
+  - [Chalkboard](#chalkboard)
+  - [Menu Page](#menu-page)
+  - [Location and Events](#location-and-events-page)
+  - [Concept and Story](#concept-and-story-page)
+  - [Contact](#contact-page)
+  - [Footer](#footer)
+  - [Future Features](#future-features)
+- [Testing](#testing)
+  - 
+
 ## Introduction
 
 At Lujain's is a fictional foodtruck passion project of, as the name of the foodtruck suggests, Lujain, wich you can find consistently in the same location during the weekends and at specific events. 
@@ -106,6 +116,8 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
   
   - To enhance the interactivity of the navigation bar, hovering over the links triggers a color change effect. When users hover over the logo and navigation links, the color changes to #ffb018, providing visual feedback.
 
+  - The logo hover function has been created by positioning 2 logos on top of each other. The coloured version with a higher z-index value was positioned above the white logo while setting it's opacity to 0%. Once hovered the opacity changes to a value visible to the user creating a visual feedback and a sense of interactivity.
+
   - The navigation bar is designed to adapt to different screen sizes. It utilizes two "nav" elements, each with its own visibility based on the width of the viewport. Above a width threshold of 1025px wich is typical on larger screens such as desktop and laptops, the primary navigation bar is displayed.
 ![Primary Navigation Bar](/assets/images/readme-images/navbar.webp)
 
@@ -126,54 +138,63 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
   - Upon entering any page outside the landing page the users are welcomed by a black chalkboard stating the location of website. This consistency reinforces the sense of location of the user. Combined with the fixed header and the underlined active page it ensures the user never feels lost on this website.
   The font "Fredericka the Great" has been used to mimic the chalk like handwritten aspect familiar with chalkboards. 
   ![Chalkboard](/assets/images/readme-images/chalkboard-welcome.webp)
+
 ### Menu page:
 
   - The users landing on the menu page are specifically interested in food so i allowed the page to be longer in order to be able to present each item with its description of the ingredients and an image. This way the user can make a detailed and informed choice.
   ![Menu Item](/assets/images/readme-images/menu-item.webp)
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+### Location and Events page:
 
-- __Club Ethos Section__
+  - The location and events page is designed to provide users with essential information about the food truck's whereabouts and upcoming events. The page is divided into two distinct sections.  
+  
+  - The upper part of the page is dedicated to providing users with detailed information about the food truck's location through an embedded Google Map and a description next to it. The interactive map enables the users to visualize the area and convienently plan their visit.
+  ![Location Preview](/assets/images/readme-images/location-preview.webp)
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - The lower part of the page in a separated section users can find informations about the upcoming events wich will be regularly updated. 
+  ![Events Preview](/assets/images/readme-images/events-preview.webp)
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+### Concept and Story page:
 
-- __Meetup Times section__
+  - The concept and story page serves as a platform to immerse users in the unique vision and values behind the food truck. This page is divided into three distinctive sections, providing information about the concept, eco-friendly practices and the story that led to the creation of the foodtruck.
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - The first section of the page introduces users to the core concept. Through a combination of images and descriptions i aim to convey the essence of the concept of the food truck: every dish is lovingly prepare in a home-cooked style. In some instances certain images have been chosen for my own personal amusement and do not depict the exact content in a literal sense (see the gnome in the snow representing "small and fresh" and the happy loaf of bread). 
+  ![Concept Preview](/assets/images/readme-images/concept-preview.webp)
 
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+  - In a standalone section i placed some special emphasis on the commitment to eco-friendly practices. Here users are informed that the owner prioritizes the use of eco-friendly materials wich aligns harmonously with the overall concept of the food truck.
+  ![Eco-Friendly Preview](/assets/images/readme-images/eco-friendly-preview.webp)
 
-- __The Footer__ 
+  - The final section of the page delves into the inspiring story behind the creation of the food truck. An image of the owner herself and the narrative enables the users to connect with the passion and dedication behind every aspect of the food truck: the unwavering will (i was waiting forever for an excuse to use this line) of delivering exceptional homemade food infused with love. 
+  ![Story Preview](/assets/images/readme-images/story-preview.webp)
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+### Contact page:
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+  - The contact page server as a direct way of communication between the users and the owner. This way the users can recognize that their opinion and suggestions are valued while being rewarded for their activity with updates and informations.
 
-- ## Gallery
+  - The first section of the contact page features a contact form where users can easily get in touch to share their suggestions and feedback. By filling out the contact form a "form-dump" page opens thanking them for getting in contact. 
+  ![Contact Preview](/assets/images/readme-images/contact-preview.webp)
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+  - The second section of the contact page features a subscribe form wich offers the opportunity of staying informed about any updates, changes to the menu, location and events. By filling out the subscribe form a "form-dump" page opens thanking them for subscribing.
+  ![Subscribe Preview](/assets/images/readme-images/subscribe-preview.webp)
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+  - Upon submission of either form, users will be redirected to a corresponding form-dump page to confirm their submission.
+  ![Form-Dump 1 preview](/assets/images/readme-images/form-dump-1-preview.webp)
+  ![Fomt-Dump 2 preview](/assets/images/readme-images/form-dump-2-preview.webp)
 
-- __The Sign Up Page__
+### Footer
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+  - The footer section follows the same concept as the header, creating a distinctive and consistent visual experience separating it from the rest of the website. It includes a smaller version of the logo, contact information and relevant social links. 
 
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
+  - To keep consistency with the header and the rest of the website the social links also feature an interactive design in order to promote a visual feedback to the user.
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+  - As with the header also the footer's design is consistent in all pages giving the user a sense of familiarity when navigating the website.
+![Footer Preview](/assets/images/readme-images/footer-preview.webp)
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+### Future Features
 
-### Features Left to Implement
-
-- Another feature idea
+- Multiple scrolling images in the landing page.
+- A gallery.
+- An error page with a "return to the homepage" button.
 
 ## Testing 
 
