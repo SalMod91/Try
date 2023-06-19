@@ -9,8 +9,11 @@
     - [New User Goals](#new-user-goals)
 - [Design](#design)
   - [Color Scheme](#color-scheme)
+  - [Typography](#typography)
+  - [Imagery](#imagery)
 - [Features](#features)
     - [Navigation Bar](#navigation-bar)
+    - [Landing page](#landing-page)
 ## Introduction
 
 At Lujain's is a fictional foodtruck passion project of, as the name of the foodtruck suggests, Lujain, wich you can find consistently in the same location during the weekends and at specific events. 
@@ -19,7 +22,7 @@ At Lujain's Footruck was born from Lujain's love of cooking and sharing food wit
 
 The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu , introduce them to the social media page and the biggest reason for visiting the website for new and old users will be to provide informations about the location and events. 
 
-![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.PNG)
+![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.webp)
 
 ## UX
 
@@ -64,7 +67,7 @@ By employing the "Smokeywhite" color for the text on black chalkboards, the desi
 - Links and logos <br>
 The color #ffb018, which also happens to be the color of the logo, has been carefully chosen to create engaging hover effects for both links and the logo itself. When users hover over links or the logo, the color transitions from the default state to #ffb018 providing visual feedback indicating interactivity.
 
-![Colour Palette](/assets/images/readme-images/colour-palette.PNG)
+![Colour Palette](/assets/images/readme-images/colour-palette.webp)
 
 ### Typography:
 - Fredericka the Great <br>
@@ -97,15 +100,36 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
 
 ### Navigation Bar:
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Featured on all  pages, the navigation bar ensures that the users always know their current location and have easy acces to different sections of the site by following the user's scrolling.
+  
+  - The key design principle of the navigation bar is to provide clear visual cues regarding the user's location with the website by highlighting the location through the use of an underline (inspired by Love Running project).
+  
+  - To enhance the interactivity of the navigation bar, hovering over the links triggers a color change effect. When users hover over the logo and navigation links, the color changes to #ffb018, providing visual feedback.
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+  - The navigation bar is designed to adapt to different screen sizes. It utilizes two "nav" elements, each with its own visibility based on the width of the viewport. Above a width threshold of 1025px wich is typical on larger screens such as desktop and laptops, the primary navigation bar is displayed.
+![Primary Navigation Bar](/assets/images/readme-images/navbar.webp)
 
-- __The landing page image__
+- Below a threshold of 1024px, tipycal on smaller screens such as mobile devices the navigation bar transforms into a hamburger icon, indicating the presence of a sliding menu. <br>
+  The idea for this, especially the use of gradient coloring for the hamburger icon has been inspired by https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ wich i later customized to adapt to the specific requirements and aesthetics of my website.
+![Secondary Navigation Bar](/assets/images/readme-images/navbar-2.webp)
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+### Landing page:
+
+  - The landing page includes a photograph of a foodtruck as the hero image. This enables visitors to quickly recognize and relate to a food truck website.
+
+  - To ensure a user-friendly experience, the landing page includes four distinct, for a lack of a better definition, "summary boxes" that represent each a section of the website: menu, location & events, concept & story and contact. These boxes help the user find what they are looking for without overwhelming them with information. Each summary box is accompanied by an intuitive and interactive button. When users hover over these button the color scheme transforms providing visual feedback and highlighting an interactive object.
+  ![Summary Boxes](/assets/images/readme-images/summary-box.webp)
+
+  - The landing page has been designed with intuitive navigation in mind. It can be scrolled through with a single scroll (on a desktop/laptop size screen) and only one click is necessary to reach the goal of the visit. By minimizing the effort required to find information i prioritize a user-friendly and convenient environment. 
+
+### Chalkboard:
+  - Upon entering any page outside the landing page the users are welcomed by a black chalkboard stating the location of website. This consistency reinforces the sense of location of the user. Combined with the fixed header and the underlined active page it ensures the user never feels lost on this website.
+  The font "Fredericka the Great" has been used to mimic the chalk like handwritten aspect familiar with chalkboards. 
+  ![Chalkboard](/assets/images/readme-images/chalkboard-welcome.webp)
+### Menu page:
+
+  - The users landing on the menu page are specifically interested in food so i allowed the page to be longer in order to be able to present each item with its description of the ingredients and an image. This way the user can make a detailed and informed choice.
+  ![Menu Item](/assets/images/readme-images/menu-item.webp)
 
 ![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
