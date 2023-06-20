@@ -24,7 +24,25 @@
 - [Testing](#testing)
   - [Testing Table](#testing-table)
   - [Validator Testing](#validator-testing)
+  - [Unfixed Bugs](#unfixed-bugs)
 - [Thought Of Process](#thought-of-process)
+  - [Initial Thoughts](#initial-thoughts)
+  - [First Writing](#first-writing)
+  - [Editor](#editor)
+  - [Images](#images)
+  - [Mentor Support](#mentor-support)
+  - [Header](#header)
+  - [Internal Link Buttons](#internal-link-buttons)
+  - [Footer](#footer)
+  - [Media Queries](#media-queries)
+  - [Validator](#validator)
+  - [General Design](#general-design)
+  - [Wireframes](#wire-frames)
+- [Technologies Used](#technologies-used)
+  - [Main Languages Used](#main-languages-used)
+  - [Frameworks, Libraries, Programs](#frameworks-libraries-and-programs-used)
+- [Deployment](#deployment)
+
 
 ## Introduction
 
@@ -32,7 +50,7 @@ At Lujain's is a fictional foodtruck passion project of, as the name of the food
 
 At Lujain's Footruck was born from Lujain's love of cooking and sharing food with everyone, as such it's target is an audience of all ages, especially people down on their luck thanks to the affordable prices wich aim not to make a profit but rather to cover its production costs.
 
-The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu , introduce them to the social media page and the biggest reason for visiting the website for new and old users will be to provide informations about the location and events. 
+The goal of the website is to help the new audience to find out the concept of the Foodtruck, Lujain herself and why she started this project, what to expect in the Menu , introduce them to the social media page and the biggest reason for visiting the website for new and old users will be to provide informations about the location and events. <br> The website is live and can be found [HERE](https://salmod91.github.io/project-1-at-lujain/index.html)
 
 ![Responsive Screenshot](/assets/images/readme-images/responsive-screenshot.webp)
 
@@ -232,23 +250,87 @@ Form-Dump Subscribe | Size down from 1920px, testing down to the minimum width f
 - CSS
   - No errors were found when passing through the official (Jigsaw) validator ![CSS Validator](/assets/images/readme-images/css-validator.webp)
 
-## Thought Of Process
-
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+- Header Logo: <br>
+The transparent colored header logo has been manually filled with the color #ffb018 using a paint program. However, due to this manual process, the filling might not be perfect, resulting in a slight white border around the text. While this border is visible to the naked eye or when zoomed in, it is a minor imperfection. <br>
+Note: It is worth mentioning that for the header logo, relying on the assistance of Tony Manzi to achieve a perfect fill was not pursued, as he had already contributed significantly to the project without any expectation of reciprocity.
 
-## Deployment
+- Footer: <br>
+On the landing page, when viewed at full screen, the footer is not perfectly centered. To address this issue, a simple solution is to apply the CSS rule "width: 33%" to the flex-row-container, which will ensure proper alignment and centering of the footer.
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+## Thought Process
+
+### Initial Thoughts 
+In this section, I will provide an informal account of my thought process during the initial stages of the project. While the following description may deviate slightly from formal conventions, it aims to convey honesty and authenticity in capturing my genuine experience. <br> 
+Embarking into this project marked my first independent endeavor in coding so i approached it with an exploratory mindset wich is just a fancy way of saying: "I improvised alot without actually knowing what i was doing" <br> Initially i drew inspiration from the Love Running project as a "template" to bounce off ideas using what was taught to start shaping the landing page. Short thereafter i found that my design idea started diverging from it very quickly. At that point i was on my own embracing a trial-and-error approach experimenting different techniques wich led to a landing page created inefficiently often requiring the use of position:relative/absolute, along with careful adjustments of margins and paddings. <br> I found this not very efficient and time consuming recognizing the need for a greater efficiency. 
+
+### First writing 
+While sorting throgh the notes i took during the web development course to look for an alternative i stumbled upon the flex positioning wich felt to me like a ray of light amidst the darkness.
+My first breakthrough came with the realization that I could use a container element and apply the flex attribute to it. Thinking i had discovered a hidden gem my ego was soon struck down when realizing some time later after a google search that the flexbox positioning (it even has a name for how common it is) was a well-known and used technique.
+I started applying flexbox positioning to the subsequent pages although i didn't fully grasp its potential until the last pages of the website where i altogether stopped using position:relative/absolute to help me position the elements. <br> Seeking to improve my knowledge about the flex positioning i ran into the following guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/. <br > I found myself on more occasions going back to improve upon the old code thanks to this "cheatsheet" although i kept some of the less efficient one as a reminder for myself of the progress i feel i made. <br> W3schools was also used to inform myself about the possible CSS rules i could apply to it like the notable example of ":nth child" selector wich i to reverse the rows of the concept&story page.
+
+### Editor 
+The first frustration came in the form of the editor. At the time Code Anywhere was having major server issues wich resulted in significant work delays of approximately a week. Uploading images became problematic and the editor suffered from significant lag. I switched over "temporarily" to Gipod when CA failed to upload some images, wich can be found as one of the early commit messages. Eventually i decided to finish the project on Gitpod.
+
+### Images 
+The background image posed one of  my first challenges wich in hindsight now sound silly. After an extensive search i finally managed to find an image suitable for the background but its life size was too large. Compressing it reduced the quality of the image drastically wich was visually unappealing. I solved this by compressing it myself through cutting and resizing using the standard microsoft photo viewer. <br> The hero image's chalkboard has also been "photoshopped" by me using an advanced, barely known program called "Paint".
+Another challenge I faced was the time-consuming task of sorting through royalty-free images to find suitable visuals for various sections of the website. I received valuable assistance from my partner, Lujain, who dedicated a significant amount of time to help me search for appropriate images that aligned with the overall concept of the project.
+
+### Mentor Support 
+Initially i believed i could get by on my own but after completing the first sketch of the landing page and menu page i decided to give the mentor support a try. This turned out to be one of the best decisions i made through the project. I was fortunate to receive guidance from my mentor, Lauren, whose assistance proved invaluable. Lauren introduced me to various extensions and tools, emphasized the importance of the conventional commit messages. Introduced the advantages of using Chrome over Firefox and provided tips and best practices that i could have not fathomed on my own. <br> Lauren was supportive and motivating, readily available even outside the Mentor meeting times. Her guidance played a significant role towards the progress i made during the project. Lauren's mentorship undoubtedly elevated the quality of my work.
+
+### Header 
+From the get go, I planned a dynamic header with an animated logo and a collapsible navigation bar that would transform into a hamburger icon on smaller screens. The idea of animating the logo through the use of transforming the opacity from 0 to 100% came naturally to me. Initially the logo stood alone but i felt it could add more information. Later i edited the PNG that my friend, Tony Manzi, created for me by adding the text "@ Lujain's" to give a sense of branding. One of the main challenges was when the time to create the hamburger icon and sliding menu came up. At that point i gathered enough experience to come up with an input checkbox prompting the visibility of the menu but i struggled to create the actual hamburger icon. Eventually i came across a helpful YouTube video that taught me how to use three <span> elements to represent the bars of the hamburger icon. I quickly realized that the flaw in it was that only the bars themselves were interactive and clicking or tapping between the bars would create no effect. I had to scrap the hamburger icon and start from 0 again. After an extensive online search (it is difficult to find a way to create a hamburger menu without javascrypt apparently) i found a website introducing the idea of creating a label, similar with the spans, but using color gradient attribute to shape it. Using that concept i finally created my hamburger icon after different attempts. This website also introduced me to the possibility of using 2 nav bars, wich i thought of but scrapped the idea assuming that it wasn't syntactically correct. There was also an overlay idea to show a dark background when the hidden menu appears wich was an intriguing idea. I ultimately decided not to implement it since that wasn't my idea, i felt uncomfortable applying to this project something taken from someone else, it would lessen the appreciation i have for my work and it wouldn't be a representation of what i created.
+
+### Internal Link Buttons 
+I initially utilized and styled the "button" element as a descendant to the "a" element, to stand out and communicate to the user that it is an interactable object that will reward you for using it by applying the #ffb018 color and black text color reversed when hovered on. To my surprise all my love put into it has been almost wasted because i later through the validator that it is not correct to have a "button" being a descendant of an anchor. After mourning my fallen comrade, the "button", i decided that if i cant have a button i will have the anchor looking like it! This way i fixed the issue and it works as intended. <br> Note to "a": although you may look like my old friend "button" i wont love you the same way!!
+
+### Footer 
+The footer was first created through a mix of flex positing and absolute/relative positioning. However i wanted to further explore the possibilities of flex positioning and decided to use it as a learnin experience and experimented with the concept of flex-grow. While the footer content isn't perfectly centered with the rest of the website, i chose to leave it as is. This decision was taken because i risked falling into the trap of the comfort zone of using what i was comfortable with instead of exploring and improving. So kept it as it is, a mangled positioning mess to remind me that i still have a long way forward. <br> It's important to note that if this project were to be used profesionally i would have easily being able to center it by applying the CSS rule "width: 33%" to the flex-row-container and switching it to "width:auto" at media query max-width:740px (tested).
+
+### Media Queries 
+The implementation of the media queries were challenging at first due to my initial improvised approach without an end game plan. I had to rewrite the majority of the code again by using the old foundation and make it more efficient for the transition to smaller screens. Once the foundation was changed from manual positioning to a more stable flex positioning resizing it became easy. I struggled in the beginning because first and foremost of a lack of experience, and also because the containers and images were bigger than 1440px causing some issues with Chrome. I switced to Firefox once more wich later caused me some more trouble. Firefox didn't accurately display when elements like container were out of frame. For instance, i mistakenly resized containers and images to 768px for screens down to 769px, forgetting to account for additional space occupied by paddings and borders. Only after commiting the changes and testing them on http://responsivetesttool.com/ did i find out about this issue. Subsequently switching back to Chrome and changing the old postioning code to flex positioning the developing of media queries got easier. 
+
+### Validator 
+After separating me from my friend "button" i hesitantly had to rely on the Validator again. I used spans in wrong places ignoring the fact that spans are inline elements and that they cannot contain block elements and the validator made me aware of it. I fixed this by changing the spans to divs and called it a day. 
+
+### General Design
+Every element has been meticoulously chosen to fit the aspect and concept of the main idea. Consistency was the core element behind every decision. 
+Every container enjoys a 30px margin at full screen gradually resized to 10px on smaller screens. Initially i used percentages to determine the size of margins and paddings wich i later changed to px values after the flex breakthrough and after some insights from my mentor. <br> All pages have the consistency of using the same concept: a white transparent background to separate the content from the body background, from ca. 60% to ca. 80% of the screen size depending on the content displayed. Initially i considered positioning the pages in the navbar based on the container size but later concluded that the priority in the list of orders of the navbar should be the importance of the visit. The most likely reason to visit should probably be menu and location wich have different sizes of containers. I had to settle. <br>
+
+Side note: I must admit that while I enjoyed the coding aspect of the project, I struggled with the visual design elements. It often led to procrastination and frustration. I loved writing code but i hated trying to imagine wich position would fit best and what would look nice. Fortunately i have my partner Lujain to thank for if i even remotely made progress. She is a talented painter, although she wont admit it, and enjoyed helping me in the beginning when i was lost and demotivated for the 100th time. 
+
+### Wire Frames
+
+Initially, having had prior experience as a restaurant ownr, I had a cler vision of what i wanted with the website and how it would look up to the Menu Page. <br> I used paint to create a mockup for myself being oblivious to the fact it should be added to the README file so now you get to enjoy my art. 
+![Wireframe](/assets/images/readme-images/wireframe.png)
+![Wireframe 2](/assets/images/readme-images/wireframe-2.png) 
+
+## Technologies Used
+
+### Main Languages Used
+- HTML5
+- CSS3
+
+### Frameworks, Libraries and Programs Used
+- Google Fonts - used for the fonts "Fredericka the Great", Merriweather and "Indie Flower". Sans-serif was used as a fallback font.
+- Font Awesome - used to add icons to the social links in the footer element.
+- Code Anywhere - used to initially create the html files, CSS file styling sheet and images directory before pushing the project to Github. Later switched to gitpod due to server issues.
+- Gitpod - used to modify the initially created files on Code Anywhere.
+- GitHub - To store my repository for submission.
+- Am i Responsive - used to take a screnshot showcasing the responsiveness of the website. (https://ui.dev/amiresponsive)
+- Responsive Tool - used to test the responsiveness down to every pixel. (http://responsivetesttool.com/)
+- Paint - used to modify the logo and hero image and to create an initial mockup of the project.
+
+## Deployment 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
-
+The live link can be found [HERE](https://salmod91.github.io/project-1-at-lujain/index.html)
 
 ## Credits 
 

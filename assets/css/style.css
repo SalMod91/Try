@@ -554,7 +554,7 @@
     padding: 20px;
 }
 
-/* FLex container for the descriptions of the concept */
+/* Flex container for the descriptions of the concept */
 .concept-text {
     width: 50%;
     text-align: center;
@@ -826,7 +826,7 @@ footer {
     height: 80px;
 }
 
-/* Used rows instead of divs in order to experiment something new */
+/* Used flex-grow in order to experiment something new */
 .footer-row-container {
     display: flex;
     flex-grow: 1;
