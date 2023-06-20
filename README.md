@@ -24,6 +24,7 @@
 - [Testing](#testing)
   - [Testing Table](#testing-table)
   - [Validator Testing](#validator-testing)
+  - [Lighthouse](#lighthouse)
   - [Unfixed Bugs](#unfixed-bugs)
 - [Thought Of Process](#thought-of-process)
   - [Initial Thoughts](#initial-thoughts)
@@ -42,7 +43,9 @@
   - [Main Languages Used](#main-languages-used)
   - [Frameworks, Libraries, Programs](#frameworks-libraries-and-programs-used)
 - [Deployment](#deployment)
-
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
 
 ## Introduction
 
@@ -215,6 +218,7 @@ Due to the specific theme of sandwiches on a cutting board with a black backgrou
 - Multiple scrolling images in the landing page.
 - A gallery.
 - An error page with a "return to the homepage" button.
+- Scrolling reviews in the landing page
 
 ## Testing 
 
@@ -249,6 +253,9 @@ Form-Dump Subscribe | Size down from 1920px, testing down to the minimum width f
   - Form-Dump Subscribe Page ![Form Dump 2 Validator](/assets/images/readme-images/form-dump-2-validator.webp)
 - CSS
   - No errors were found when passing through the official (Jigsaw) validator ![CSS Validator](/assets/images/readme-images/css-validator.webp)
+
+### Lighthouse: 
+- The page has a good rating in Lighthouse, ultimately i couldn't manage to improve the performance due to my lack of experience with images. <br> The same is true for the "Best Practices" score lacking a correct image aspect ratio in order to receive a full score![Lighthouse](/assets/images/readme-images/lighthouse.webp)
 
 ### Unfixed Bugs
 
@@ -334,37 +341,32 @@ The live link can be found [HERE](https://salmod91.github.io/project-1-at-lujain
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Hamburger icon instructions: [Website](https://alvarotrigo.com/blog/hamburger-menu-css-responsive/)
+
+- Flexbox cheatsheet guide: [Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+- The icons in the footer were taken from: [Font Awesome](https://fontawesome.com/)
+
+- Structure idea for this README file: [Lauren](https://github.com/CluelessBiker). <br> A special thank you to Lauren for the support and motivation during our meetings and for helping even outside meeting times whenever i required it. 
+
+- My Partner Lujain assisted me with design ideas of the project and spelling for the "Design" and "Features" section of the README file. She dedicated her own time in finding fitting royalty-free pictures and fonts.
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- First and foremost a special thank you to my good friend and VFX Artist Tony Manzi for creating the site's logo and black frame board at amazing speed. You can check out his work on Artstation [Tony Manzi](https://www.artstation.com/mizanation)
 
+- [Favicon.io](https://favicon.io/) was used to convert the logo into a favicon image
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+ - The images of Lujain herself are privately owned and used with permission
 
-## Other General Project Advice
+- The images depicting the Menu were created using Canva https://www.canva.com/ai-image-generator/
 
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
+Various images were used from different Open Source Sites:
+ - [Background](https://www.pexels.com/photo/black-handle-knife-on-top-brown-wooden-surface-616484/)
+ - Home Page: <br>[Sandwich](https://unsplash.com/photos/U0PiIS4Uvkc) <br> [Black Rotary Phone](https://www.pexels.com/photo/black-rotary-telephone-beside-ball-pen-on-white-printed-paper-47319/)<br> [Location](https://www.freepik.com/free-photo/map-pin-location-direction-position-graphic_17117725.htm#query=location%20gps&position=15&from_view=search&track=ais)
+  - [Black Chalkboard](https://pixabay.com/illustrations/school-board-empty-mockup-slate-4958118/)
+ - Concept&Story Page: <br> [Woman Cooking](https://www.pexels.com/photo/woman-in-the-kitchen-cooking-2890387/) <br> [Grinded Meat](https://www.freepik.com/free-photo/fresh-meat-raw-minced-ground-meat_7916294.htm#query=grinded%20meat&position=4&from_view=search&track=ais) <br> [Gnome in the snow](https://www.pexels.com/photo/gnome-figurine-on-snow-3151908/) <br> [Sauces](https://www.pexels.com/photo/three-assorted-color-of-cream-in-containers-on-brown-wooden-slab-1435901/)<br> [Loaves of bread](https://www.pexels.com/photo/close-up-of-baked-breads-9506934/) <br> [Happy Toast](https://www.pexels.com/photo/slice-of-loaf-bread-with-dog-face-920220/)<br> [Eco-Friendly](https://www.freepik.com/free-vector/hand-drawn-compostable-label_29892310.htm#page=3&query=eco%20friendly&position=5&from_view=search&track=ais)
 
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+ - [Construction Sign](https://unsplash.com/photos/yvpexJFLTSU) Used in earlier commits
