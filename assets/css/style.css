@@ -758,6 +758,11 @@
     margin-bottom: 15px;
 }
 
+.contact-form>textarea {
+    max-width: 96%;
+    min-width: 96%;
+}
+
 /* Send button */
 .form-submit {
     font-size: 250%;
