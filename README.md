@@ -256,7 +256,10 @@ Form-Dump Subscribe | Size down from 1920px, testing down to the minimum width f
   - No errors were found when passing through the official (Jigsaw) validator ![CSS Validator](/assets/images/readme-images/css-validator.webp)
 
 ### Lighthouse: 
-- The page has a good rating in Lighthouse, ultimately I couldn't manage to improve the performance due to my lack of experience with images. <br> The same is true for the "Best Practices" score lacking a correct image aspect ratio in order to receive a full score![Lighthouse](/assets/images/readme-images/lighthouse.webp)
+- The page has a good rating on mobile devices in Lighthouse, ultimately I couldn't manage to improve the performance due to my lack of experience with images. <br> The same is true for the "Best Practices" score lacking a correct image aspect ratio in order to receive a full score. ![Lighthouse](/assets/images/readme-images/lighthouse.webp)
+
+- The page has a good rating on desktop devices in Lighthouse.
+![PageSpeed Insights](/assets/images/readme-images/lighthouse-desktop.PNG)
 
 ### Unfixed Bugs
 
@@ -266,6 +269,8 @@ Note: It is worth mentioning that for the header logo, relying on the assistance
 
 - Footer: <br>
 On the landing page, when viewed at full screen, the footer is not perfectly centred. To address this issue, a simple solution is to apply the CSS rule "width: 33%" to the flex-row-container, which will ensure proper alignment and centring of the footer.
+
+- Empty form label: <br> This error message related to empty form label flagged by WAVE tool was solved by adding aria-label to the label for the checkbox used to prompt the visibily of the hidden menu. After further testing i have identified that the error message related to it is still specifically flagged by Mozilla Firefox.
 
 ## Thought Process
 
